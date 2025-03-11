@@ -1,0 +1,341 @@
+#pragma version 10
+#pragma typetrack false
+
+// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+main:
+    intcblock 0 1 100000 3
+    bytecblock 0x151f7c75 "yes_asset_id" "no_asset_id"
+    // smart_contracts/prediction_market/contract.py:5
+    // class PredictionMarket(ARC4Contract):
+    txn NumAppArgs
+    bz main_after_if_else@11
+    pushbytess 0x372c7930 0x96daca0d 0x60cda873 0xaa90d17b 0xb5ff9514 // method "create_market(uint64,string,string)void", method "fund_contract(pay)void", method "create_asset()void", method "get_yes_asset_id()uint64", method "get_no_asset_id()uint64"
+    txna ApplicationArgs 0
+    match main_create_market_route@3 main_fund_contract_route@4 main_create_asset_route@5 main_get_yes_asset_id_route@6 main_get_no_asset_id_route@7
+
+main_after_if_else@11:
+    // smart_contracts/prediction_market/contract.py:5
+    // class PredictionMarket(ARC4Contract):
+    intc_0 // 0
+    return
+
+main_get_no_asset_id_route@7:
+    // smart_contracts/prediction_market/contract.py:61
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub get_no_asset_id
+    itob
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_get_yes_asset_id_route@6:
+    // smart_contracts/prediction_market/contract.py:57
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub get_yes_asset_id
+    itob
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_create_asset_route@5:
+    // smart_contracts/prediction_market/contract.py:27
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub create_asset
+    intc_1 // 1
+    return
+
+main_fund_contract_route@4:
+    // smart_contracts/prediction_market/contract.py:22
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:5
+    // class PredictionMarket(ARC4Contract):
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // smart_contracts/prediction_market/contract.py:22
+    // @arc4.abimethod
+    callsub fund_contract
+    intc_1 // 1
+    return
+
+main_create_market_route@3:
+    // smart_contracts/prediction_market/contract.py:12-13
+    // # Creazione mercato
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    // smart_contracts/prediction_market/contract.py:5
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/prediction_market/contract.py:12-13
+    // # Creazione mercato
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    callsub create_market
+    intc_1 // 1
+    return
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.create_market(market_id: uint64, question: bytes, description: bytes) -> void:
+create_market:
+    // smart_contracts/prediction_market/contract.py:12-16
+    // # Creazione mercato
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    // def create_market(
+    //     self, market_id: UInt64, question: algopy.String, description: algopy.String
+    // ) -> None:
+    proto 3 0
+    // smart_contracts/prediction_market/contract.py:17
+    // self.market_id = market_id
+    pushbytes "market_id"
+    frame_dig -3
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:18
+    // self.question = question
+    pushbytes "question"
+    frame_dig -2
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:19
+    // self.description = description
+    pushbytes "description"
+    frame_dig -1
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:20
+    // self.creator = Global.current_application_address
+    pushbytes "creator"
+    global CurrentApplicationAddress
+    app_global_put
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.fund_contract(payment_txn: uint64) -> void:
+fund_contract:
+    // smart_contracts/prediction_market/contract.py:22-23
+    // @arc4.abimethod
+    // def fund_contract(self, payment_txn: gtxn.PaymentTransaction) -> None:
+    proto 1 0
+    // smart_contracts/prediction_market/contract.py:24
+    // assert payment_txn.receiver == Global.current_application_address
+    frame_dig -1
+    gtxns Receiver
+    global CurrentApplicationAddress
+    ==
+    assert
+    // smart_contracts/prediction_market/contract.py:25
+    // assert payment_txn.amount == UInt64(400_000)  # 0.4 Algo
+    frame_dig -1
+    gtxns Amount
+    pushint 400000 // 400000
+    ==
+    assert
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.create_asset() -> void:
+create_asset:
+    // smart_contracts/prediction_market/contract.py:29-40
+    // # Yes Asset creation
+    // yes_creation_tx = itxn.AssetConfig(
+    //     total=100_000,
+    //     decimals=0,
+    //     default_frozen=False,
+    //     unit_name="YES",
+    //     asset_name="buy YES",
+    //     manager=Global.creator_address,
+    //     reserve=Global.creator_address,
+    //     freeze=Global.creator_address,
+    //     clawback=Global.creator_address,
+    // ).submit()
+    itxn_begin
+    // smart_contracts/prediction_market/contract.py:36
+    // manager=Global.creator_address,
+    global CreatorAddress
+    // smart_contracts/prediction_market/contract.py:37-39
+    // reserve=Global.creator_address,
+    // freeze=Global.creator_address,
+    // clawback=Global.creator_address,
+    dupn 3
+    itxn_field ConfigAssetClawback
+    itxn_field ConfigAssetFreeze
+    itxn_field ConfigAssetReserve
+    itxn_field ConfigAssetManager
+    // smart_contracts/prediction_market/contract.py:35
+    // asset_name="buy YES",
+    pushbytes "buy YES"
+    itxn_field ConfigAssetName
+    // smart_contracts/prediction_market/contract.py:34
+    // unit_name="YES",
+    pushbytes "YES"
+    itxn_field ConfigAssetUnitName
+    // smart_contracts/prediction_market/contract.py:33
+    // default_frozen=False,
+    intc_0 // 0
+    itxn_field ConfigAssetDefaultFrozen
+    // smart_contracts/prediction_market/contract.py:32
+    // decimals=0,
+    intc_0 // 0
+    itxn_field ConfigAssetDecimals
+    // smart_contracts/prediction_market/contract.py:31
+    // total=100_000,
+    intc_2 // 100000
+    itxn_field ConfigAssetTotal
+    // smart_contracts/prediction_market/contract.py:29-30
+    // # Yes Asset creation
+    // yes_creation_tx = itxn.AssetConfig(
+    intc_3 // acfg
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/prediction_market/contract.py:29-40
+    // # Yes Asset creation
+    // yes_creation_tx = itxn.AssetConfig(
+    //     total=100_000,
+    //     decimals=0,
+    //     default_frozen=False,
+    //     unit_name="YES",
+    //     asset_name="buy YES",
+    //     manager=Global.creator_address,
+    //     reserve=Global.creator_address,
+    //     freeze=Global.creator_address,
+    //     clawback=Global.creator_address,
+    // ).submit()
+    itxn_submit
+    // smart_contracts/prediction_market/contract.py:41
+    // self.yes_asset_id = yes_creation_tx.created_asset.id
+    bytec_1 // "yes_asset_id"
+    itxn CreatedAssetID
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:43-54
+    // # No Asset creation
+    // no_creation_tx = itxn.AssetConfig(
+    //     total=100_000,
+    //     decimals=0,
+    //     default_frozen=False,
+    //     unit_name="NO",
+    //     asset_name="buy NO",
+    //     manager=Global.creator_address,
+    //     reserve=Global.creator_address,
+    //     freeze=Global.creator_address,
+    //     clawback=Global.creator_address,
+    // ).submit()
+    itxn_begin
+    // smart_contracts/prediction_market/contract.py:50
+    // manager=Global.creator_address,
+    global CreatorAddress
+    // smart_contracts/prediction_market/contract.py:51-53
+    // reserve=Global.creator_address,
+    // freeze=Global.creator_address,
+    // clawback=Global.creator_address,
+    dupn 3
+    itxn_field ConfigAssetClawback
+    itxn_field ConfigAssetFreeze
+    itxn_field ConfigAssetReserve
+    itxn_field ConfigAssetManager
+    // smart_contracts/prediction_market/contract.py:49
+    // asset_name="buy NO",
+    pushbytes "buy NO"
+    itxn_field ConfigAssetName
+    // smart_contracts/prediction_market/contract.py:48
+    // unit_name="NO",
+    pushbytes "NO"
+    itxn_field ConfigAssetUnitName
+    // smart_contracts/prediction_market/contract.py:47
+    // default_frozen=False,
+    intc_0 // 0
+    itxn_field ConfigAssetDefaultFrozen
+    // smart_contracts/prediction_market/contract.py:46
+    // decimals=0,
+    intc_0 // 0
+    itxn_field ConfigAssetDecimals
+    // smart_contracts/prediction_market/contract.py:45
+    // total=100_000,
+    intc_2 // 100000
+    itxn_field ConfigAssetTotal
+    // smart_contracts/prediction_market/contract.py:43-44
+    // # No Asset creation
+    // no_creation_tx = itxn.AssetConfig(
+    intc_3 // acfg
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/prediction_market/contract.py:43-54
+    // # No Asset creation
+    // no_creation_tx = itxn.AssetConfig(
+    //     total=100_000,
+    //     decimals=0,
+    //     default_frozen=False,
+    //     unit_name="NO",
+    //     asset_name="buy NO",
+    //     manager=Global.creator_address,
+    //     reserve=Global.creator_address,
+    //     freeze=Global.creator_address,
+    //     clawback=Global.creator_address,
+    // ).submit()
+    itxn_submit
+    // smart_contracts/prediction_market/contract.py:55
+    // self.no_asset_id = no_creation_tx.created_asset.id
+    bytec_2 // "no_asset_id"
+    itxn CreatedAssetID
+    app_global_put
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.get_yes_asset_id() -> uint64:
+get_yes_asset_id:
+    // smart_contracts/prediction_market/contract.py:59
+    // return self.yes_asset_id
+    intc_0 // 0
+    bytec_1 // "yes_asset_id"
+    app_global_get_ex
+    assert // check self.yes_asset_id exists
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.get_no_asset_id() -> uint64:
+get_no_asset_id:
+    // smart_contracts/prediction_market/contract.py:63
+    // return self.no_asset_id
+    intc_0 // 0
+    bytec_2 // "no_asset_id"
+    app_global_get_ex
+    assert // check self.no_asset_id exists
+    retsub
