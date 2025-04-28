@@ -1,60 +1,332 @@
 #pragma version 10
 #pragma typetrack false
 
-// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+// smart_contracts.prediction_market.contract.PredictionMarket.__algopy_entrypoint_with_init() -> uint64:
 main:
-    intcblock 0 1 100000 3
-    bytecblock 0x151f7c75 "yes_asset_id" "no_asset_id"
-    // smart_contracts/prediction_market/contract.py:5
+    intcblock 0 1 3 4 100000
+    bytecblock "asset_yes" "asset_no" "pool_token" "matched_yes_price" "matched_no_price" "market_closed" 0x7965735f70726963655f 0x7965735f7175616e746974795f 0x6e6f5f70726963655f 0x6e6f5f7175616e746974795f "winning_asset" "ratio" 0x151f7c75
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // smart_contracts/prediction_market/contract.py:24
+    // self.asset_yes = Asset()
+    bytec_0 // "asset_yes"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:25
+    // self.asset_no = Asset()
+    bytec_1 // "asset_no"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:26
+    // self.pool_token = (
+    bytec_2 // "pool_token"
+    // smart_contracts/prediction_market/contract.py:27
+    // Asset()
+    intc_0 // 0
+    // smart_contracts/prediction_market/contract.py:26-28
+    // self.pool_token = (
+    //     Asset()
+    // )  # Asset che rappresenta il token del pool di liquidità
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:29
+    // self.ratio = UInt64(0)  # Variabile per mantenere il rapporto tra asset
+    bytec 11 // "ratio"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:40
+    // self.matched_yes_price = UInt64(0)  # Prezzo di YES al momento del match
+    bytec_3 // "matched_yes_price"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:41
+    // self.matched_no_price = UInt64(0)  # Prezzo di NO al momento del match
+    bytec 4 // "matched_no_price"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:44
+    // self.market_closed = False  # Inizialmente il mercato è aperto
+    bytec 5 // "market_closed"
+    intc_0 // 0
+    app_global_put
+
+main_after_if_else@2:
+    // smart_contracts/prediction_market/contract.py:21
     // class PredictionMarket(ARC4Contract):
     txn NumAppArgs
-    bz main_after_if_else@11
-    pushbytess 0x372c7930 0x96daca0d 0x60cda873 0xaa90d17b 0xb5ff9514 // method "create_market(uint64,string,string)void", method "fund_contract(pay)void", method "create_asset()void", method "get_yes_asset_id()uint64", method "get_no_asset_id()uint64"
+    bz main_bare_routing@17
+    pushbytess 0x96daca0d 0x60cda873 0xadf6bbb6 0x3e85ada6 0x0c4b5e73 0x9b72a47d 0x3172ca9d 0x85a0e63a 0x4a88e055 0x2b37c5c7 0x19393286 0x67590aa6 // method "fund_contract(pay)void", method "create_asset()void", method "create_market(pay,asset,asset)uint64", method "set_order(uint64,account,uint64,uint64,pay)void", method "get_order(uint64,account)(uint64,uint64)", method "fill_order(account,account)void", method "gas()void", method "buyAsset(account,uint64,uint64,pay)void", method "swap(axfer,asset,asset)void", method "clear_orders(uint64,account)void", method "close_market(account,uint64)void", method "redeem(account,axfer)void"
     txna ApplicationArgs 0
-    match main_create_market_route@3 main_fund_contract_route@4 main_create_asset_route@5 main_get_yes_asset_id_route@6 main_get_no_asset_id_route@7
+    match main_fund_contract_route@5 main_create_asset_route@6 main_create_market_route@7 main_set_order_route@8 main_get_order_route@9 main_fill_order_route@10 main_gas_route@11 main_buyAsset_route@12 main_swap_route@13 main_clear_orders_route@14 main_close_market_route@15 main_redeem_route@16
 
-main_after_if_else@11:
-    // smart_contracts/prediction_market/contract.py:5
+main_after_if_else@19:
+    // smart_contracts/prediction_market/contract.py:21
     // class PredictionMarket(ARC4Contract):
     intc_0 // 0
     return
 
-main_get_no_asset_id_route@7:
-    // smart_contracts/prediction_market/contract.py:61
+main_redeem_route@16:
+    // smart_contracts/prediction_market/contract.py:274
     // @arc4.abimethod
     txn OnCompletion
     !
     assert // OnCompletion is not NoOp
     txn ApplicationID
     assert // can only call when not creating
-    callsub get_no_asset_id
-    itob
-    bytec_0 // 0x151f7c75
-    swap
-    concat
-    log
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Accounts
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_3 // axfer
+    ==
+    assert // transaction type is axfer
+    // smart_contracts/prediction_market/contract.py:274
+    // @arc4.abimethod
+    callsub redeem
     intc_1 // 1
     return
 
-main_get_yes_asset_id_route@6:
-    // smart_contracts/prediction_market/contract.py:57
+main_close_market_route@15:
+    // smart_contracts/prediction_market/contract.py:260
     // @arc4.abimethod
     txn OnCompletion
     !
     assert // OnCompletion is not NoOp
     txn ApplicationID
     assert // can only call when not creating
-    callsub get_yes_asset_id
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Accounts
+    txna ApplicationArgs 2
+    btoi
+    // smart_contracts/prediction_market/contract.py:260
+    // @arc4.abimethod
+    callsub close_market
+    intc_1 // 1
+    return
+
+main_clear_orders_route@14:
+    // smart_contracts/prediction_market/contract.py:248
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txna ApplicationArgs 2
+    btoi
+    txnas Accounts
+    // smart_contracts/prediction_market/contract.py:248
+    // @arc4.abimethod
+    callsub clear_orders
+    intc_1 // 1
+    return
+
+main_swap_route@13:
+    // smart_contracts/prediction_market/contract.py:217
+    // @arc4.abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_3 // axfer
+    ==
+    assert // transaction type is axfer
+    txna ApplicationArgs 1
+    btoi
+    txnas Assets
+    txna ApplicationArgs 2
+    btoi
+    txnas Assets
+    // smart_contracts/prediction_market/contract.py:217
+    // @arc4.abimethod()
+    callsub swap
+    intc_1 // 1
+    return
+
+main_buyAsset_route@12:
+    // smart_contracts/prediction_market/contract.py:188
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Accounts
+    txna ApplicationArgs 2
+    btoi
+    txna ApplicationArgs 3
+    btoi
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // smart_contracts/prediction_market/contract.py:188
+    // @arc4.abimethod
+    callsub buyAsset
+    intc_1 // 1
+    return
+
+main_gas_route@11:
+    // smart_contracts/prediction_market/contract.py:183
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    intc_1 // 1
+    return
+
+main_fill_order_route@10:
+    // smart_contracts/prediction_market/contract.py:153
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Accounts
+    txna ApplicationArgs 2
+    btoi
+    txnas Accounts
+    // smart_contracts/prediction_market/contract.py:153
+    // @arc4.abimethod
+    callsub fill_order
+    intc_1 // 1
+    return
+
+main_get_order_route@9:
+    // smart_contracts/prediction_market/contract.py:143
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txna ApplicationArgs 2
+    btoi
+    txnas Accounts
+    // smart_contracts/prediction_market/contract.py:143
+    // @arc4.abimethod
+    callsub get_order
+    swap
     itob
-    bytec_0 // 0x151f7c75
+    swap
+    itob
+    concat
+    bytec 12 // 0x151f7c75
     swap
     concat
     log
     intc_1 // 1
     return
 
-main_create_asset_route@5:
-    // smart_contracts/prediction_market/contract.py:27
+main_set_order_route@8:
+    // smart_contracts/prediction_market/contract.py:119
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txna ApplicationArgs 2
+    btoi
+    txnas Accounts
+    txna ApplicationArgs 3
+    btoi
+    txna ApplicationArgs 4
+    btoi
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // smart_contracts/prediction_market/contract.py:119
+    // @arc4.abimethod
+    callsub set_order
+    intc_1 // 1
+    return
+
+main_create_market_route@7:
+    // smart_contracts/prediction_market/contract.py:83
+    // @arc4.abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    txna ApplicationArgs 1
+    btoi
+    txnas Assets
+    txna ApplicationArgs 2
+    btoi
+    txnas Assets
+    // smart_contracts/prediction_market/contract.py:83
+    // @arc4.abimethod()
+    callsub create_market
+    itob
+    bytec 12 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_create_asset_route@6:
+    // smart_contracts/prediction_market/contract.py:51
     // @arc4.abimethod
     txn OnCompletion
     !
@@ -65,15 +337,15 @@ main_create_asset_route@5:
     intc_1 // 1
     return
 
-main_fund_contract_route@4:
-    // smart_contracts/prediction_market/contract.py:22
+main_fund_contract_route@5:
+    // smart_contracts/prediction_market/contract.py:46
     // @arc4.abimethod
     txn OnCompletion
     !
     assert // OnCompletion is not NoOp
     txn ApplicationID
     assert // can only call when not creating
-    // smart_contracts/prediction_market/contract.py:5
+    // smart_contracts/prediction_market/contract.py:21
     // class PredictionMarket(ARC4Contract):
     txn GroupIndex
     intc_1 // 1
@@ -83,84 +355,73 @@ main_fund_contract_route@4:
     intc_1 // pay
     ==
     assert // transaction type is pay
-    // smart_contracts/prediction_market/contract.py:22
+    // smart_contracts/prediction_market/contract.py:46
     // @arc4.abimethod
     callsub fund_contract
     intc_1 // 1
     return
 
-main_create_market_route@3:
-    // smart_contracts/prediction_market/contract.py:12-13
-    // # Creazione mercato
-    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+main_bare_routing@17:
+    // smart_contracts/prediction_market/contract.py:21
+    // class PredictionMarket(ARC4Contract):
     txn OnCompletion
-    !
-    assert // OnCompletion is not NoOp
+    bnz main_after_if_else@19
     txn ApplicationID
     !
     assert // can only call when creating
-    // smart_contracts/prediction_market/contract.py:5
-    // class PredictionMarket(ARC4Contract):
-    txna ApplicationArgs 1
-    btoi
-    txna ApplicationArgs 2
-    extract 2 0
-    txna ApplicationArgs 3
-    extract 2 0
-    // smart_contracts/prediction_market/contract.py:12-13
-    // # Creazione mercato
-    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
-    callsub create_market
     intc_1 // 1
     return
 
 
-// smart_contracts.prediction_market.contract.PredictionMarket.create_market(market_id: uint64, question: bytes, description: bytes) -> void:
-create_market:
-    // smart_contracts/prediction_market/contract.py:12-16
-    // # Creazione mercato
-    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
-    // def create_market(
-    //     self, market_id: UInt64, question: algopy.String, description: algopy.String
-    // ) -> None:
+// smart_contracts.prediction_market.contract.do_asset_transfer(receiver: bytes, asset: uint64, amount: uint64) -> void:
+do_asset_transfer:
+    // smart_contracts/prediction_market/contract.py:375-376
+    // @subroutine
+    // def do_asset_transfer(*, receiver: Account, asset: Asset, amount: UInt64) -> None:
     proto 3 0
-    // smart_contracts/prediction_market/contract.py:17
-    // self.market_id = market_id
-    pushbytes "market_id"
+    // smart_contracts/prediction_market/contract.py:378-382
+    // itxn.AssetTransfer(
+    //     xfer_asset=asset,
+    //     asset_amount=amount,
+    //     asset_receiver=receiver,
+    // ).submit()
+    itxn_begin
     frame_dig -3
-    app_global_put
-    // smart_contracts/prediction_market/contract.py:18
-    // self.question = question
-    pushbytes "question"
-    frame_dig -2
-    app_global_put
-    // smart_contracts/prediction_market/contract.py:19
-    // self.description = description
-    pushbytes "description"
+    itxn_field AssetReceiver
     frame_dig -1
-    app_global_put
-    // smart_contracts/prediction_market/contract.py:20
-    // self.creator = Global.current_application_address
-    pushbytes "creator"
-    global CurrentApplicationAddress
-    app_global_put
+    itxn_field AssetAmount
+    frame_dig -2
+    itxn_field XferAsset
+    // smart_contracts/prediction_market/contract.py:378
+    // itxn.AssetTransfer(
+    intc_3 // axfer
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/prediction_market/contract.py:378-382
+    // itxn.AssetTransfer(
+    //     xfer_asset=asset,
+    //     asset_amount=amount,
+    //     asset_receiver=receiver,
+    // ).submit()
+    itxn_submit
     retsub
 
 
 // smart_contracts.prediction_market.contract.PredictionMarket.fund_contract(payment_txn: uint64) -> void:
 fund_contract:
-    // smart_contracts/prediction_market/contract.py:22-23
+    // smart_contracts/prediction_market/contract.py:46-47
     // @arc4.abimethod
     // def fund_contract(self, payment_txn: gtxn.PaymentTransaction) -> None:
     proto 1 0
-    // smart_contracts/prediction_market/contract.py:24
+    // smart_contracts/prediction_market/contract.py:48
     // assert payment_txn.receiver == Global.current_application_address
     frame_dig -1
     gtxns Receiver
     global CurrentApplicationAddress
     ==
     assert
-    // smart_contracts/prediction_market/contract.py:25
+    // smart_contracts/prediction_market/contract.py:49
     // assert payment_txn.amount == UInt64(400_000)  # 0.4 Algo
     frame_dig -1
     gtxns Amount
@@ -172,24 +433,24 @@ fund_contract:
 
 // smart_contracts.prediction_market.contract.PredictionMarket.create_asset() -> void:
 create_asset:
-    // smart_contracts/prediction_market/contract.py:29-40
+    // smart_contracts/prediction_market/contract.py:53-64
     // # Yes Asset creation
-    // yes_creation_tx = itxn.AssetConfig(
+    // yes_txn = itxn.AssetConfig(
     //     total=100_000,
     //     decimals=0,
     //     default_frozen=False,
     //     unit_name="YES",
-    //     asset_name="buy YES",
+    //     asset_name="YES_asset",
     //     manager=Global.creator_address,
     //     reserve=Global.creator_address,
     //     freeze=Global.creator_address,
     //     clawback=Global.creator_address,
     // ).submit()
     itxn_begin
-    // smart_contracts/prediction_market/contract.py:36
+    // smart_contracts/prediction_market/contract.py:60
     // manager=Global.creator_address,
     global CreatorAddress
-    // smart_contracts/prediction_market/contract.py:37-39
+    // smart_contracts/prediction_market/contract.py:61-63
     // reserve=Global.creator_address,
     // freeze=Global.creator_address,
     // clawback=Global.creator_address,
@@ -198,70 +459,70 @@ create_asset:
     itxn_field ConfigAssetFreeze
     itxn_field ConfigAssetReserve
     itxn_field ConfigAssetManager
-    // smart_contracts/prediction_market/contract.py:35
-    // asset_name="buy YES",
-    pushbytes "buy YES"
+    // smart_contracts/prediction_market/contract.py:59
+    // asset_name="YES_asset",
+    pushbytes "YES_asset"
     itxn_field ConfigAssetName
-    // smart_contracts/prediction_market/contract.py:34
+    // smart_contracts/prediction_market/contract.py:58
     // unit_name="YES",
     pushbytes "YES"
     itxn_field ConfigAssetUnitName
-    // smart_contracts/prediction_market/contract.py:33
+    // smart_contracts/prediction_market/contract.py:57
     // default_frozen=False,
     intc_0 // 0
     itxn_field ConfigAssetDefaultFrozen
-    // smart_contracts/prediction_market/contract.py:32
+    // smart_contracts/prediction_market/contract.py:56
     // decimals=0,
     intc_0 // 0
     itxn_field ConfigAssetDecimals
-    // smart_contracts/prediction_market/contract.py:31
+    // smart_contracts/prediction_market/contract.py:55
     // total=100_000,
-    intc_2 // 100000
+    intc 4 // 100000
     itxn_field ConfigAssetTotal
-    // smart_contracts/prediction_market/contract.py:29-30
+    // smart_contracts/prediction_market/contract.py:53-54
     // # Yes Asset creation
-    // yes_creation_tx = itxn.AssetConfig(
-    intc_3 // acfg
+    // yes_txn = itxn.AssetConfig(
+    intc_2 // acfg
     itxn_field TypeEnum
     intc_0 // 0
     itxn_field Fee
-    // smart_contracts/prediction_market/contract.py:29-40
+    // smart_contracts/prediction_market/contract.py:53-64
     // # Yes Asset creation
-    // yes_creation_tx = itxn.AssetConfig(
+    // yes_txn = itxn.AssetConfig(
     //     total=100_000,
     //     decimals=0,
     //     default_frozen=False,
     //     unit_name="YES",
-    //     asset_name="buy YES",
+    //     asset_name="YES_asset",
     //     manager=Global.creator_address,
     //     reserve=Global.creator_address,
     //     freeze=Global.creator_address,
     //     clawback=Global.creator_address,
     // ).submit()
     itxn_submit
-    // smart_contracts/prediction_market/contract.py:41
-    // self.yes_asset_id = yes_creation_tx.created_asset.id
-    bytec_1 // "yes_asset_id"
+    // smart_contracts/prediction_market/contract.py:66
+    // self.asset_yes = Asset(yes_txn.created_asset.id)  # Ora è del tipo corretto
+    bytec_0 // "asset_yes"
     itxn CreatedAssetID
     app_global_put
-    // smart_contracts/prediction_market/contract.py:43-54
+    // smart_contracts/prediction_market/contract.py:68-79
     // # No Asset creation
-    // no_creation_tx = itxn.AssetConfig(
+    // no_txn = itxn.AssetConfig(
     //     total=100_000,
     //     decimals=0,
     //     default_frozen=False,
     //     unit_name="NO",
-    //     asset_name="buy NO",
+    //     asset_name="NO_asset",
     //     manager=Global.creator_address,
     //     reserve=Global.creator_address,
     //     freeze=Global.creator_address,
     //     clawback=Global.creator_address,
     // ).submit()
     itxn_begin
-    // smart_contracts/prediction_market/contract.py:50
+    // smart_contracts/prediction_market/contract.py:75
     // manager=Global.creator_address,
     global CreatorAddress
-    // smart_contracts/prediction_market/contract.py:51-53
+    // smart_contracts/prediction_market/contract.py:76-78
     // reserve=Global.creator_address,
     // freeze=Global.creator_address,
     // clawback=Global.creator_address,
@@ -270,72 +531,1083 @@ create_asset:
     itxn_field ConfigAssetFreeze
     itxn_field ConfigAssetReserve
     itxn_field ConfigAssetManager
-    // smart_contracts/prediction_market/contract.py:49
-    // asset_name="buy NO",
-    pushbytes "buy NO"
+    // smart_contracts/prediction_market/contract.py:74
+    // asset_name="NO_asset",
+    pushbytes "NO_asset"
     itxn_field ConfigAssetName
-    // smart_contracts/prediction_market/contract.py:48
+    // smart_contracts/prediction_market/contract.py:73
     // unit_name="NO",
     pushbytes "NO"
     itxn_field ConfigAssetUnitName
-    // smart_contracts/prediction_market/contract.py:47
+    // smart_contracts/prediction_market/contract.py:72
     // default_frozen=False,
     intc_0 // 0
     itxn_field ConfigAssetDefaultFrozen
-    // smart_contracts/prediction_market/contract.py:46
+    // smart_contracts/prediction_market/contract.py:71
     // decimals=0,
     intc_0 // 0
     itxn_field ConfigAssetDecimals
-    // smart_contracts/prediction_market/contract.py:45
+    // smart_contracts/prediction_market/contract.py:70
     // total=100_000,
-    intc_2 // 100000
+    intc 4 // 100000
     itxn_field ConfigAssetTotal
-    // smart_contracts/prediction_market/contract.py:43-44
+    // smart_contracts/prediction_market/contract.py:68-69
     // # No Asset creation
-    // no_creation_tx = itxn.AssetConfig(
-    intc_3 // acfg
+    // no_txn = itxn.AssetConfig(
+    intc_2 // acfg
     itxn_field TypeEnum
     intc_0 // 0
     itxn_field Fee
-    // smart_contracts/prediction_market/contract.py:43-54
+    // smart_contracts/prediction_market/contract.py:68-79
     // # No Asset creation
-    // no_creation_tx = itxn.AssetConfig(
+    // no_txn = itxn.AssetConfig(
     //     total=100_000,
     //     decimals=0,
     //     default_frozen=False,
     //     unit_name="NO",
-    //     asset_name="buy NO",
+    //     asset_name="NO_asset",
     //     manager=Global.creator_address,
     //     reserve=Global.creator_address,
     //     freeze=Global.creator_address,
     //     clawback=Global.creator_address,
     // ).submit()
     itxn_submit
-    // smart_contracts/prediction_market/contract.py:55
-    // self.no_asset_id = no_creation_tx.created_asset.id
-    bytec_2 // "no_asset_id"
+    // smart_contracts/prediction_market/contract.py:81
+    // self.asset_no = Asset(no_txn.created_asset.id)  # Anche questo ora è corretto
+    bytec_1 // "asset_no"
     itxn CreatedAssetID
     app_global_put
     retsub
 
 
-// smart_contracts.prediction_market.contract.PredictionMarket.get_yes_asset_id() -> uint64:
-get_yes_asset_id:
-    // smart_contracts/prediction_market/contract.py:59
-    // return self.yes_asset_id
+// smart_contracts.prediction_market.contract.PredictionMarket.create_market(seed: uint64, yes_asset: uint64, no_asset: uint64) -> uint64:
+create_market:
+    // smart_contracts/prediction_market/contract.py:83-86
+    // @arc4.abimethod()
+    // def create_market(
+    //     self, seed: gtxn.PaymentTransaction, yes_asset: Asset, no_asset: Asset
+    // ) -> UInt64:
+    proto 3 1
+    // smart_contracts/prediction_market/contract.py:88-89
+    // # Controlla che il contratto non sia già stato avviato
+    // assert self.pool_token.id == 0, "Il mercato è già stato creato"
     intc_0 // 0
-    bytec_1 // "yes_asset_id"
+    bytec_2 // "pool_token"
     app_global_get_ex
-    assert // check self.yes_asset_id exists
+    assert // check self.pool_token exists
+    !
+    assert // Il mercato è già stato creato
+    // smart_contracts/prediction_market/contract.py:91-92
+    // # Controlla che il gruppo di transazioni sia di dimensione 2
+    // assert Global.group_size == 2, "gruppo di transazioni non è 2"
+    global GroupSize
+    pushint 2 // 2
+    ==
+    assert // gruppo di transazioni non è 2
+    // smart_contracts/prediction_market/contract.py:96
+    // seed.receiver == Global.current_application_address
+    frame_dig -3
+    gtxns Receiver
+    global CurrentApplicationAddress
+    ==
+    // smart_contracts/prediction_market/contract.py:94-97
+    // # Verifica che la transazione di funding sia inviata all'indirizzo del contratto
+    // assert (
+    //     seed.receiver == Global.current_application_address
+    // ), "receiver non è all'indirizzo del contratto"
+    assert // receiver non è all'indirizzo del contratto
+    // smart_contracts/prediction_market/contract.py:99-100
+    // # Controlla che il funding del contratto sia almeno 300.000 microAlgos
+    // assert seed.amount >= 300_000, "amount minimo non soddisfatto"
+    frame_dig -3
+    gtxns Amount
+    pushint 300000 // 300000
+    >=
+    assert // amount minimo non soddisfatto
+    // smart_contracts/prediction_market/contract.py:102-103
+    // # Assicura che gli asset siano ordinati correttamente (per evitare ambiguità)
+    // assert yes_asset.id < no_asset.id, "asset yes deve essere minore di asset no"
+    frame_dig -2
+    frame_dig -1
+    <
+    assert // asset yes deve essere minore di asset no
+    // smart_contracts/prediction_market/contract.py:105-106
+    // # Assegna gli asset al contratto
+    // self.asset_yes = yes_asset
+    bytec_0 // "asset_yes"
+    frame_dig -2
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:107
+    // self.asset_no = no_asset
+    bytec_1 // "asset_no"
+    frame_dig -1
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:315-326
+    // itxn.AssetConfig(
+    //     asset_name=b"DPT-"
+    //     + self.asset_yes.unit_name
+    //     + b"-"
+    //     + self.asset_no.unit_name,
+    //     unit_name=b"dbt",
+    //     total=TOTAL_SUPPLY,
+    //     decimals=3,
+    //     manager=Global.current_application_address,
+    //     reserve=Global.current_application_address,
+    // )
+    // .submit()
+    itxn_begin
+    // smart_contracts/prediction_market/contract.py:317
+    // + self.asset_yes.unit_name
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    asset_params_get AssetUnitName
+    assert // asset exists
+    // smart_contracts/prediction_market/contract.py:316
+    // asset_name=b"DPT-"
+    pushbytes 0x4450542d
+    // smart_contracts/prediction_market/contract.py:316-317
+    // asset_name=b"DPT-"
+    // + self.asset_yes.unit_name
+    swap
+    concat
+    // smart_contracts/prediction_market/contract.py:318
+    // + b"-"
+    pushbytes 0x2d
+    // smart_contracts/prediction_market/contract.py:316-318
+    // asset_name=b"DPT-"
+    // + self.asset_yes.unit_name
+    // + b"-"
+    concat
+    // smart_contracts/prediction_market/contract.py:319
+    // + self.asset_no.unit_name,
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    asset_params_get AssetUnitName
+    assert // asset exists
+    // smart_contracts/prediction_market/contract.py:316-319
+    // asset_name=b"DPT-"
+    // + self.asset_yes.unit_name
+    // + b"-"
+    // + self.asset_no.unit_name,
+    concat
+    // smart_contracts/prediction_market/contract.py:323
+    // manager=Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/prediction_market/contract.py:324
+    // reserve=Global.current_application_address,
+    dup
+    itxn_field ConfigAssetReserve
+    itxn_field ConfigAssetManager
+    // smart_contracts/prediction_market/contract.py:322
+    // decimals=3,
+    intc_2 // 3
+    itxn_field ConfigAssetDecimals
+    // smart_contracts/prediction_market/contract.py:321
+    // total=TOTAL_SUPPLY,
+    pushint 10000000000 // 10000000000
+    itxn_field ConfigAssetTotal
+    // smart_contracts/prediction_market/contract.py:320
+    // unit_name=b"dbt",
+    pushbytes 0x646274
+    itxn_field ConfigAssetUnitName
+    itxn_field ConfigAssetName
+    // smart_contracts/prediction_market/contract.py:315
+    // itxn.AssetConfig(
+    intc_2 // acfg
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/prediction_market/contract.py:315-326
+    // itxn.AssetConfig(
+    //     asset_name=b"DPT-"
+    //     + self.asset_yes.unit_name
+    //     + b"-"
+    //     + self.asset_no.unit_name,
+    //     unit_name=b"dbt",
+    //     total=TOTAL_SUPPLY,
+    //     decimals=3,
+    //     manager=Global.current_application_address,
+    //     reserve=Global.current_application_address,
+    // )
+    // .submit()
+    itxn_submit
+    // smart_contracts/prediction_market/contract.py:109-110
+    // # Crea il token del pool di liquidità
+    // self.pool_token = self._create_pool_token()
+    bytec_2 // "pool_token"
+    // smart_contracts/prediction_market/contract.py:315-327
+    // itxn.AssetConfig(
+    //     asset_name=b"DPT-"
+    //     + self.asset_yes.unit_name
+    //     + b"-"
+    //     + self.asset_no.unit_name,
+    //     unit_name=b"dbt",
+    //     total=TOTAL_SUPPLY,
+    //     decimals=3,
+    //     manager=Global.current_application_address,
+    //     reserve=Global.current_application_address,
+    // )
+    // .submit()
+    // .created_asset
+    itxn CreatedAssetID
+    // smart_contracts/prediction_market/contract.py:109-110
+    // # Crea il token del pool di liquidità
+    // self.pool_token = self._create_pool_token()
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:112-113
+    // # Effettua l'opt-in per entrambi gli asset
+    // self._do_opt_in(self.asset_yes)
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    // smart_contracts/prediction_market/contract.py:334
+    // receiver=Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/prediction_market/contract.py:333-337
+    // do_asset_transfer(
+    //     receiver=Global.current_application_address,
+    //     asset=asset,
+    //     amount=UInt64(0),
+    // )
+    swap
+    // smart_contracts/prediction_market/contract.py:336
+    // amount=UInt64(0),
+    intc_0 // 0
+    // smart_contracts/prediction_market/contract.py:333-337
+    // do_asset_transfer(
+    //     receiver=Global.current_application_address,
+    //     asset=asset,
+    //     amount=UInt64(0),
+    // )
+    callsub do_asset_transfer
+    // smart_contracts/prediction_market/contract.py:114
+    // self._do_opt_in(self.asset_no)
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    // smart_contracts/prediction_market/contract.py:334
+    // receiver=Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/prediction_market/contract.py:333-337
+    // do_asset_transfer(
+    //     receiver=Global.current_application_address,
+    //     asset=asset,
+    //     amount=UInt64(0),
+    // )
+    swap
+    // smart_contracts/prediction_market/contract.py:336
+    // amount=UInt64(0),
+    intc_0 // 0
+    // smart_contracts/prediction_market/contract.py:333-337
+    // do_asset_transfer(
+    //     receiver=Global.current_application_address,
+    //     asset=asset,
+    //     amount=UInt64(0),
+    // )
+    callsub do_asset_transfer
+    // smart_contracts/prediction_market/contract.py:116-117
+    // # Ritorna l'ID del token del pool
+    // return self.pool_token.id
+    intc_0 // 0
+    bytec_2 // "pool_token"
+    app_global_get_ex
+    assert // check self.pool_token exists
     retsub
 
 
-// smart_contracts.prediction_market.contract.PredictionMarket.get_no_asset_id() -> uint64:
-get_no_asset_id:
-    // smart_contracts/prediction_market/contract.py:63
-    // return self.no_asset_id
+// smart_contracts.prediction_market.contract.PredictionMarket.set_order(order_type: uint64, user: bytes, price: uint64, quantity: uint64, payment_txn: uint64) -> void:
+set_order:
+    // smart_contracts/prediction_market/contract.py:119-127
+    // @arc4.abimethod
+    // def set_order(
+    //     self,
+    //     order_type: UInt64,
+    //     user: Account,
+    //     price: UInt64,
+    //     quantity: UInt64,
+    //     payment_txn: gtxn.PaymentTransaction,
+    // ) -> None:
+    proto 5 0
+    // smart_contracts/prediction_market/contract.py:128
+    // total_payment = price * quantity  # Importo totale da pagare
+    frame_dig -3
+    frame_dig -2
+    *
+    // smart_contracts/prediction_market/contract.py:129
+    // assert payment_txn.sender == user, "Il pagamento deve provenire dall'utente"
+    frame_dig -1
+    gtxns Sender
+    frame_dig -4
+    ==
+    assert // Il pagamento deve provenire dall'utente
+    // smart_contracts/prediction_market/contract.py:131
+    // payment_txn.receiver == Global.current_application_address
+    frame_dig -1
+    gtxns Receiver
+    global CurrentApplicationAddress
+    ==
+    // smart_contracts/prediction_market/contract.py:130-132
+    // assert (
+    //     payment_txn.receiver == Global.current_application_address
+    // ), "Il pagamento deve essere inviato al contratto"
+    assert // Il pagamento deve essere inviato al contratto
+    // smart_contracts/prediction_market/contract.py:133
+    // assert payment_txn.amount == total_payment, "L'importo pagato non è corretto"
+    frame_dig -1
+    gtxns Amount
+    ==
+    assert // L'importo pagato non è corretto
+    // smart_contracts/prediction_market/contract.py:134
+    // if order_type == UInt64(1):
+    frame_dig -5
+    intc_1 // 1
+    ==
+    bz set_order_else_body@2
+    // smart_contracts/prediction_market/contract.py:135
+    // self.place_order_yes_price[user] = price
+    bytec 6 // 0x7965735f70726963655f
+    frame_dig -4
+    concat
+    frame_dig -3
+    itob
+    box_put
+    // smart_contracts/prediction_market/contract.py:136
+    // self.place_order_yes_quantity[user] = quantity
+    bytec 7 // 0x7965735f7175616e746974795f
+    frame_dig -4
+    concat
+    frame_dig -2
+    itob
+    box_put
+    retsub
+
+set_order_else_body@2:
+    // smart_contracts/prediction_market/contract.py:137
+    // elif order_type == UInt64(0):
+    frame_dig -5
+    !
+    assert // Tipo di ordine non valido
+    // smart_contracts/prediction_market/contract.py:138
+    // self.place_order_no_price[user] = price
+    bytec 8 // 0x6e6f5f70726963655f
+    frame_dig -4
+    concat
+    frame_dig -3
+    itob
+    box_put
+    // smart_contracts/prediction_market/contract.py:139
+    // self.place_order_no_quantity[user] = quantity
+    bytec 9 // 0x6e6f5f7175616e746974795f
+    frame_dig -4
+    concat
+    frame_dig -2
+    itob
+    box_put
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.get_order(order_type: uint64, user: bytes) -> uint64, uint64:
+get_order:
+    // smart_contracts/prediction_market/contract.py:143-144
+    // @arc4.abimethod
+    // def get_order(self, order_type: UInt64, user: Account) -> Tuple[UInt64, UInt64]:
+    proto 2 2
+    // smart_contracts/prediction_market/contract.py:146
+    // if order_type == UInt64(1):
+    frame_dig -2
+    intc_1 // 1
+    ==
+    bz get_order_else_body@2
+    // smart_contracts/prediction_market/contract.py:147
+    // return self.place_order_yes_price[user], self.place_order_yes_quantity[user]
+    bytec 6 // 0x7965735f70726963655f
+    frame_dig -1
+    concat
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_yes_price entry exists
+    bytec 7 // 0x7965735f7175616e746974795f
+    frame_dig -1
+    concat
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_yes_quantity entry exists
+    retsub
+
+get_order_else_body@2:
+    // smart_contracts/prediction_market/contract.py:148
+    // elif order_type == UInt64(0):
+    frame_dig -2
+    !
+    assert // Tipo di ordine non valido
+    // smart_contracts/prediction_market/contract.py:149
+    // return self.place_order_no_price[user], self.place_order_no_quantity[user]
+    bytec 8 // 0x6e6f5f70726963655f
+    frame_dig -1
+    concat
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_no_price entry exists
+    bytec 9 // 0x6e6f5f7175616e746974795f
+    frame_dig -1
+    concat
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_no_quantity entry exists
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.fill_order(yes_user: bytes, no_user: bytes) -> void:
+fill_order:
+    // smart_contracts/prediction_market/contract.py:153-158
+    // @arc4.abimethod
+    // def fill_order(
+    //     self,
+    //     yes_user: Account,
+    //     no_user: Account,
+    // ) -> None:
+    proto 2 0
+    // smart_contracts/prediction_market/contract.py:160
+    // Txn.sender == Global.creator_address
+    txn Sender
+    global CreatorAddress
+    ==
+    // smart_contracts/prediction_market/contract.py:159-161
+    // assert (
+    //     Txn.sender == Global.creator_address
+    // ), "Solo il contratto principale può eseguire questa operazione"
+    assert // Solo il contratto principale può eseguire questa operazione
+    // smart_contracts/prediction_market/contract.py:162
+    // assert yes_user in self.place_order_yes_price, "YES user has no order"
+    bytec 6 // 0x7965735f70726963655f
+    frame_dig -2
+    concat
+    dup
+    box_len
+    bury 1
+    assert // YES user has no order
+    // smart_contracts/prediction_market/contract.py:163
+    // assert no_user in self.place_order_no_price, "NO user has no order"
+    bytec 8 // 0x6e6f5f70726963655f
+    frame_dig -1
+    concat
+    dup
+    box_len
+    bury 1
+    assert // NO user has no order
+    // smart_contracts/prediction_market/contract.py:165
+    // yes_price = self.place_order_yes_price[yes_user]
+    dig 1
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_yes_price entry exists
+    // smart_contracts/prediction_market/contract.py:166
+    // yes_quantity = self.place_order_yes_quantity[yes_user]
+    bytec 7 // 0x7965735f7175616e746974795f
+    frame_dig -2
+    concat
+    dup
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_yes_quantity entry exists
+    // smart_contracts/prediction_market/contract.py:167
+    // no_price = self.place_order_no_price[no_user]
+    dig 3
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_no_price entry exists
+    // smart_contracts/prediction_market/contract.py:168
+    // no_quantity = self.place_order_no_quantity[no_user]
+    bytec 9 // 0x6e6f5f7175616e746974795f
+    frame_dig -1
+    concat
+    dup
+    box_get
+    swap
+    btoi
+    swap
+    assert // check self.place_order_no_quantity entry exists
+    // smart_contracts/prediction_market/contract.py:170
+    // assert (yes_price + no_price) % UInt64(10) == UInt64(
+    dig 5
+    dig 3
+    +
+    pushint 10 // 10
+    %
+    // smart_contracts/prediction_market/contract.py:170-172
+    // assert (yes_price + no_price) % UInt64(10) == UInt64(
+    //     0
+    // ), "Prices don't match condition"
+    !
+    assert // Prices don't match condition
+    // smart_contracts/prediction_market/contract.py:173
+    // self.matched_yes_price = yes_price
+    bytec_3 // "matched_yes_price"
+    uncover 6
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:174
+    // self.matched_no_price = no_price
+    bytec 4 // "matched_no_price"
+    uncover 3
+    app_global_put
+    // smart_contracts/prediction_market/contract.py:175
+    // do_asset_transfer(receiver=yes_user, asset=self.asset_yes, amount=yes_quantity)
     intc_0 // 0
-    bytec_2 // "no_asset_id"
+    bytec_0 // "asset_yes"
     app_global_get_ex
-    assert // check self.no_asset_id exists
+    assert // check self.asset_yes exists
+    frame_dig -2
+    swap
+    uncover 4
+    callsub do_asset_transfer
+    // smart_contracts/prediction_market/contract.py:176
+    // do_asset_transfer(receiver=no_user, asset=self.asset_no, amount=no_quantity)
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    frame_dig -1
+    swap
+    uncover 2
+    callsub do_asset_transfer
+    // smart_contracts/prediction_market/contract.py:177
+    // del self.place_order_yes_price[yes_user]
+    uncover 3
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:178
+    // del self.place_order_yes_quantity[yes_user]
+    swap
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:179
+    // del self.place_order_no_price[no_user]
+    swap
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:180
+    // del self.place_order_no_quantity[no_user]
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:181
+    // self._update_ratio()
+    callsub _update_ratio
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.buyAsset(user: bytes, asset_type: uint64, quantity: uint64, payment_txn: uint64) -> void:
+buyAsset:
+    // smart_contracts/prediction_market/contract.py:188-195
+    // @arc4.abimethod
+    // def buyAsset(
+    //     self,
+    //     user: Account,
+    //     asset_type: UInt64,
+    //     quantity: UInt64,
+    //     payment_txn: gtxn.PaymentTransaction,
+    // ) -> None:
+    proto 4 0
+    pushbytes ""
+    // smart_contracts/prediction_market/contract.py:197
+    // self.matched_yes_price > 0 and self.matched_no_price > 0
+    intc_0 // 0
+    bytec_3 // "matched_yes_price"
+    app_global_get_ex
+    assert // check self.matched_yes_price exists
+    bz buyAsset_bool_false@3
+    intc_0 // 0
+    bytec 4 // "matched_no_price"
+    app_global_get_ex
+    assert // check self.matched_no_price exists
+    bz buyAsset_bool_false@3
+    intc_1 // 1
+
+buyAsset_bool_merge@4:
+    // smart_contracts/prediction_market/contract.py:196-198
+    // assert (
+    //     self.matched_yes_price > 0 and self.matched_no_price > 0
+    // ), "Nessun match trovato, impossibile acquistare"
+    assert // Nessun match trovato, impossibile acquistare
+    // smart_contracts/prediction_market/contract.py:200
+    // if asset_type == UInt64(1):  # Asset YES
+    frame_dig -3
+    intc_1 // 1
+    ==
+    bz buyAsset_else_body@6
+    // smart_contracts/prediction_market/contract.py:201
+    // price = self.matched_yes_price
+    intc_0 // 0
+    bytec_3 // "matched_yes_price"
+    app_global_get_ex
+    assert // check self.matched_yes_price exists
+    // smart_contracts/prediction_market/contract.py:202
+    // asset_to_buy = self.asset_yes
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    swap
+    frame_bury 0
+    assert // check self.asset_yes exists
+
+buyAsset_after_if_else@10:
+    // smart_contracts/prediction_market/contract.py:209
+    // total_cost = price * quantity  # Calcoliamo il costo totale
+    frame_dig -2
+    *
+    // smart_contracts/prediction_market/contract.py:210
+    // assert payment_txn.sender == user, "Il pagamento deve provenire dall'utente"
+    frame_dig -1
+    gtxns Sender
+    frame_dig -4
+    ==
+    assert // Il pagamento deve provenire dall'utente
+    // smart_contracts/prediction_market/contract.py:212
+    // payment_txn.receiver == Global.current_application_address
+    frame_dig -1
+    gtxns Receiver
+    global CurrentApplicationAddress
+    ==
+    // smart_contracts/prediction_market/contract.py:211-213
+    // assert (
+    //     payment_txn.receiver == Global.current_application_address
+    // ), "Il pagamento deve essere inviato al contratto"
+    assert // Il pagamento deve essere inviato al contratto
+    // smart_contracts/prediction_market/contract.py:214
+    // assert payment_txn.amount == total_cost, "L'importo pagato non è corretto"
+    frame_dig -1
+    gtxns Amount
+    ==
+    assert // L'importo pagato non è corretto
+    // smart_contracts/prediction_market/contract.py:215
+    // do_asset_transfer(receiver=user, asset=asset_to_buy, amount=quantity)
+    frame_dig -4
+    frame_dig 0
+    frame_dig -2
+    callsub do_asset_transfer
+    retsub
+
+buyAsset_else_body@6:
+    // smart_contracts/prediction_market/contract.py:203
+    // elif asset_type == UInt64(0):  # Asset NO
+    frame_dig -3
+    !
+    assert // Tipo di asset non valido
+    // smart_contracts/prediction_market/contract.py:204
+    // price = self.matched_no_price
+    intc_0 // 0
+    bytec 4 // "matched_no_price"
+    app_global_get_ex
+    assert // check self.matched_no_price exists
+    // smart_contracts/prediction_market/contract.py:205
+    // asset_to_buy = self.asset_no
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    swap
+    frame_bury 0
+    assert // check self.asset_no exists
+    b buyAsset_after_if_else@10
+
+buyAsset_bool_false@3:
+    intc_0 // 0
+    b buyAsset_bool_merge@4
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.swap(swap_xfer: uint64, yes_asset: uint64, no_asset: uint64) -> void:
+swap:
+    // smart_contracts/prediction_market/contract.py:217-223
+    // @arc4.abimethod()
+    // def swap(
+    //     self,
+    //     swap_xfer: gtxn.AssetTransferTransaction,
+    //     yes_asset: Asset,
+    //     no_asset: Asset,
+    // ) -> None:
+    proto 3 0
+    pushbytes ""
+    dup
+    // smart_contracts/prediction_market/contract.py:224
+    // assert yes_asset == self.asset_yes, "asset yes nn corretto"
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    frame_dig -2
+    ==
+    assert // asset yes nn corretto
+    // smart_contracts/prediction_market/contract.py:225
+    // assert no_asset == self.asset_no, "asset no nn corretto"
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    frame_dig -1
+    ==
+    assert // asset no nn corretto
+    // smart_contracts/prediction_market/contract.py:226
+    // assert swap_xfer.asset_amount > 0, "amount minimo non raggiunto"
+    frame_dig -3
+    gtxns AssetAmount
+    dup
+    assert // amount minimo non raggiunto
+    // smart_contracts/prediction_market/contract.py:227
+    // assert swap_xfer.sender == Txn.sender, "sender invalido"
+    frame_dig -3
+    gtxns Sender
+    txn Sender
+    ==
+    assert // sender invalido
+    // smart_contracts/prediction_market/contract.py:229
+    // case self.asset_no:  # Se l'utente invia NO, vuole ricevere YES
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    // smart_contracts/prediction_market/contract.py:233
+    // case self.asset_yes:  # Se l'utente invia YES, vuole ricevere NO
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    // smart_contracts/prediction_market/contract.py:228
+    // match swap_xfer.xfer_asset:
+    frame_dig -3
+    gtxns XferAsset
+    // smart_contracts/prediction_market/contract.py:228-238
+    // match swap_xfer.xfer_asset:
+    //     case self.asset_no:  # Se l'utente invia NO, vuole ricevere YES
+    //         in_supply = self._current_no_balance()  # Pool riceve NO
+    //         out_supply = self._current_yes_balance()  # Pool deve dare YES
+    //         out_asset = self.asset_yes  # Usciranno YES
+    //     case self.asset_yes:  # Se l'utente invia YES, vuole ricevere NO
+    //         in_supply = self._current_yes_balance()  # Pool riceve YES
+    //         out_supply = self._current_no_balance()  # Pool deve dare NO
+    //         out_asset = self.asset_no  # Usciranno NO
+    //     case _:
+    //         assert False, "asset id incorretto"
+    match swap_switch_case_0@1 swap_switch_case_1@2
+    // smart_contracts/prediction_market/contract.py:238
+    // assert False, "asset id incorretto"
+    err // asset id incorretto
+
+swap_switch_case_1@2:
+    // smart_contracts/prediction_market/contract.py:234
+    // in_supply = self._current_yes_balance()  # Pool riceve YES
+    callsub _current_yes_balance
+    frame_bury 0
+    // smart_contracts/prediction_market/contract.py:235
+    // out_supply = self._current_no_balance()  # Pool deve dare NO
+    callsub _current_no_balance
+    // smart_contracts/prediction_market/contract.py:236
+    // out_asset = self.asset_no  # Usciranno NO
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    swap
+    frame_bury 1
+    assert // check self.asset_no exists
+
+swap_switch_case_next@4:
+    // smart_contracts/prediction_market/contract.py:363-365
+    // k = (
+    //     in_supply * out_supply
+    // )  # quantità attuale di "NO" (in_supply) per la quantità attuale di "YES" (out_supply) nel pool.. se un
+    frame_dig 0
+    dup
+    dig 2
+    // smart_contracts/prediction_market/contract.py:364
+    // in_supply * out_supply
+    *
+    // smart_contracts/prediction_market/contract.py:366-367
+    // # utente aggiunge più "NO" al pool, la quantità di "YES" che riceve deve essere ridotta in modo tale che k rimanga costante
+    // new_in_supply = in_supply + in_amount  # Nuovo bilancio dopo il deposito
+    swap
+    frame_dig 2
+    +
+    // smart_contracts/prediction_market/contract.py:368
+    // new_out_supply = k // new_in_supply  # Risolve la quantità da ricevere
+    /
+    // smart_contracts/prediction_market/contract.py:370
+    // out_supply - new_out_supply
+    -
+    // smart_contracts/prediction_market/contract.py:244
+    // assert to_swap > 0, "send amount too low"
+    dup
+    assert // send amount too low
+    // smart_contracts/prediction_market/contract.py:245
+    // do_asset_transfer(receiver=Txn.sender, asset=out_asset, amount=to_swap)
+    txn Sender
+    frame_dig 1
+    uncover 2
+    callsub do_asset_transfer
+    // smart_contracts/prediction_market/contract.py:246
+    // self._update_ratio()
+    callsub _update_ratio
+    retsub
+
+swap_switch_case_0@1:
+    // smart_contracts/prediction_market/contract.py:230
+    // in_supply = self._current_no_balance()  # Pool riceve NO
+    callsub _current_no_balance
+    frame_bury 0
+    // smart_contracts/prediction_market/contract.py:231
+    // out_supply = self._current_yes_balance()  # Pool deve dare YES
+    callsub _current_yes_balance
+    // smart_contracts/prediction_market/contract.py:232
+    // out_asset = self.asset_yes  # Usciranno YES
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    swap
+    frame_bury 1
+    assert // check self.asset_yes exists
+    b swap_switch_case_next@4
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.clear_orders(order_type: uint64, user1: bytes) -> void:
+clear_orders:
+    // smart_contracts/prediction_market/contract.py:248-249
+    // @arc4.abimethod
+    // def clear_orders(self, order_type: UInt64, user1: Account) -> None:
+    proto 2 0
+    // smart_contracts/prediction_market/contract.py:251
+    // if order_type == UInt64(1):  # YES Orders
+    frame_dig -2
+    intc_1 // 1
+    ==
+    bz clear_orders_else_body@2
+    // smart_contracts/prediction_market/contract.py:252
+    // del self.place_order_yes_price[user1]
+    bytec 6 // 0x7965735f70726963655f
+    frame_dig -1
+    concat
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:253
+    // del self.place_order_yes_quantity[user1]
+    bytec 7 // 0x7965735f7175616e746974795f
+    frame_dig -1
+    concat
+    box_del
+    pop
+    retsub
+
+clear_orders_else_body@2:
+    // smart_contracts/prediction_market/contract.py:254
+    // elif order_type == UInt64(0):  # NO Orders
+    frame_dig -2
+    !
+    assert // Tipo di ordine non valido
+    // smart_contracts/prediction_market/contract.py:255
+    // del self.place_order_no_price[user1]
+    bytec 8 // 0x6e6f5f70726963655f
+    frame_dig -1
+    concat
+    box_del
+    pop
+    // smart_contracts/prediction_market/contract.py:256
+    // del self.place_order_no_quantity[user1]
+    bytec 9 // 0x6e6f5f7175616e746974795f
+    frame_dig -1
+    concat
+    box_del
+    pop
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.close_market(oracle: bytes, outcome: uint64) -> void:
+close_market:
+    // smart_contracts/prediction_market/contract.py:260-261
+    // @arc4.abimethod
+    // def close_market(self, oracle: Account, outcome: UInt64) -> None:
+    proto 2 0
+    // smart_contracts/prediction_market/contract.py:263
+    // assert Txn.sender == oracle, "Solo l'oracolo può chiudere il mercato"
+    txn Sender
+    frame_dig -2
+    ==
+    assert // Solo l'oracolo può chiudere il mercato
+    // smart_contracts/prediction_market/contract.py:264
+    // assert not self.market_closed, "Il mercato è già stato chiuso"
+    intc_0 // 0
+    bytec 5 // "market_closed"
+    app_global_get_ex
+    assert // check self.market_closed exists
+    !
+    assert // Il mercato è già stato chiuso
+    // smart_contracts/prediction_market/contract.py:266-267
+    // # Imposta il vincitore
+    // if outcome == UInt64(1):
+    frame_dig -1
+    intc_1 // 1
+    ==
+    bz close_market_else_body@2
+    // smart_contracts/prediction_market/contract.py:268
+    // self.winning_asset = self.asset_yes  # ID dell'asset YES
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    bytec 10 // "winning_asset"
+    swap
+    app_global_put
+
+close_market_after_if_else@3:
+    // smart_contracts/prediction_market/contract.py:272
+    // self.market_closed = True  # Segna il mercato come chiuso
+    bytec 5 // "market_closed"
+    intc_1 // 1
+    app_global_put
+    retsub
+
+close_market_else_body@2:
+    // smart_contracts/prediction_market/contract.py:270
+    // self.winning_asset = self.asset_no  # ID dell'asset NO
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    bytec 10 // "winning_asset"
+    swap
+    app_global_put
+    b close_market_after_if_else@3
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket.redeem(user: bytes, asset_txn: uint64) -> void:
+redeem:
+    // smart_contracts/prediction_market/contract.py:274-275
+    // @arc4.abimethod
+    // def redeem(self, user: Account, asset_txn: gtxn.AssetTransferTransaction) -> None:
+    proto 2 0
+    // smart_contracts/prediction_market/contract.py:277
+    // assert self.market_closed, "Il mercato non è ancora chiuso"
+    intc_0 // 0
+    bytec 5 // "market_closed"
+    app_global_get_ex
+    assert // check self.market_closed exists
+    assert // Il mercato non è ancora chiuso
+    // smart_contracts/prediction_market/contract.py:278
+    // assert self.winning_asset, "Il risultato non è stato stabilito"
+    intc_0 // 0
+    bytec 10 // "winning_asset"
+    app_global_get_ex
+    assert // check self.winning_asset exists
+    assert // Il risultato non è stato stabilito
+    // smart_contracts/prediction_market/contract.py:280-281
+    // # Controlla che l'utente stia inviando il token vincente al contratto
+    // assert asset_txn.sender == user, "L'utente deve inviare il token"
+    frame_dig -1
+    gtxns Sender
+    frame_dig -2
+    ==
+    assert // L'utente deve inviare il token
+    // smart_contracts/prediction_market/contract.py:283
+    // asset_txn.asset_receiver == Global.current_application_address
+    frame_dig -1
+    gtxns AssetReceiver
+    global CurrentApplicationAddress
+    ==
+    // smart_contracts/prediction_market/contract.py:282-284
+    // assert (
+    //     asset_txn.asset_receiver == Global.current_application_address
+    // ), "I token devono essere inviati al contratto"
+    assert // I token devono essere inviati al contratto
+    // smart_contracts/prediction_market/contract.py:286
+    // asset_txn.xfer_asset == self.winning_asset
+    frame_dig -1
+    gtxns XferAsset
+    intc_0 // 0
+    bytec 10 // "winning_asset"
+    app_global_get_ex
+    assert // check self.winning_asset exists
+    ==
+    // smart_contracts/prediction_market/contract.py:285-287
+    // assert (
+    //     asset_txn.xfer_asset == self.winning_asset
+    // ), "Il token inviato non è quello vincente"
+    assert // Il token inviato non è quello vincente
+    // smart_contracts/prediction_market/contract.py:289-290
+    // # Determina il valore di conversione (es. 1 token = 1 Algo, puoi modificare questa logica)
+    // algo_to_send = asset_txn.asset_amount * 1_000  # 1 token = 1000 microAlgo
+    frame_dig -1
+    gtxns AssetAmount
+    pushint 1000 // 1000
+    *
+    // smart_contracts/prediction_market/contract.py:292-293
+    // # Invia Algo all'utente
+    // itxn.Payment(receiver=user, amount=algo_to_send).submit()
+    itxn_begin
+    itxn_field Amount
+    frame_dig -2
+    itxn_field Receiver
+    intc_1 // pay
+    itxn_field TypeEnum
+    intc_0 // 0
+    itxn_field Fee
+    itxn_submit
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket._update_ratio() -> void:
+_update_ratio:
+    // smart_contracts/prediction_market/contract.py:300
+    // yes_balance = self._current_yes_balance()
+    callsub _current_yes_balance
+    // smart_contracts/prediction_market/contract.py:301
+    // no_balance = self._current_no_balance()
+    callsub _current_no_balance
+    // smart_contracts/prediction_market/contract.py:302
+    // self.ratio = yes_balance * no_balance
+    *
+    bytec 11 // "ratio"
+    swap
+    app_global_put
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket._current_yes_balance() -> uint64:
+_current_yes_balance:
+    // smart_contracts/prediction_market/contract.py:347
+    // return self.asset_yes.balance(Global.current_application_address)
+    global CurrentApplicationAddress
+    intc_0 // 0
+    bytec_0 // "asset_yes"
+    app_global_get_ex
+    assert // check self.asset_yes exists
+    asset_holding_get AssetBalance
+    assert // account opted into asset
+    retsub
+
+
+// smart_contracts.prediction_market.contract.PredictionMarket._current_no_balance() -> uint64:
+_current_no_balance:
+    // smart_contracts/prediction_market/contract.py:352
+    // return self.asset_no.balance(Global.current_application_address)
+    global CurrentApplicationAddress
+    intc_0 // 0
+    bytec_1 // "asset_no"
+    app_global_get_ex
+    assert // check self.asset_no exists
+    asset_holding_get AssetBalance
+    assert // account opted into asset
     retsub

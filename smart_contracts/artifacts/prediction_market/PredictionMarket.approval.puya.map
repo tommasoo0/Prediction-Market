@@ -3,74 +3,261 @@
   "sources": [
     "../../prediction_market/contract.py"
   ],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAIA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;AAwDK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAJA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AA9BA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AALA;;AAAA;AAAA;AAAA;;AAAA;AAjBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAiBK;;;AAAA;;AATA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AARL;;;AAAA;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAQK;;;AAAA;;AAAL;;;AAIQ;;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;AAAe;;AAAf;;AAER;;;AAEe;;AAAA;;AAAwB;;AAAxB;AAAP;AACO;;AAAA;;AAAsB;;;;AAAtB;AAAP;;AAKkB;AAMN;;AACA;;;;;;;;;;AAFG;;;;;;;;;;;AADD;;;;;;;AADK;;;AADN;;;AADH;;;AADQ;;;AAAA;;;AAAA;AAWlB;;;AAAA;AAGiB;AAML;;AACA;;;;;;;;;;AAFG;;;;;;;;;;AADD;;;;;;AADK;;;AADN;;;AADH;;;AADO;;;AAAA;;;AAAA;AAWjB;;;AAAA;;AAIO;AAAA;AAAA;AAAA;AAAP;AAIO;AAAA;AAAA;AAAA;AAAP",
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuBQ;AAAiB;AAAjB;AACA;AAAgB;AAAhB;AACA;AACI;AADJ;AAGA;;AAAa;AAAb;AAWA;AAAyB;AAAzB;AACA;;AAAwB;AAAxB;AAGA;;AAAqB;AAArB;AAvBR;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AA6PK;;AAAA;AAAA;AAAA;;AAAA;AA7PL;;;AAAA;AAAA;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AA6PK;;;AAAA;;AAdA;;AAAA;AAAA;AAAA;;AAAA;AA/OL;;;AAAA;AAAA;;AAAA;;;AAAA;AA+OK;;;AAAA;;AAZA;;AAAA;AAAA;AAAA;;AAAA;AAnOL;;;AAAA;AAAA;;;AAAA;AAAA;;AAmOK;;;AAAA;;AA/BA;;AAAA;AAAA;AAAA;;AAAA;AApML;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;AAoMK;;;AAAA;;AA7BA;;AAAA;AAAA;AAAA;;AAAA;AAvKL;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAuKK;;;AAAA;;AALA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;AA9BA;;AAAA;AAAA;AAAA;;AAAA;AApIL;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;AAoIK;;;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AA1HL;;;AAAA;AAAA;;;AAAA;AAAA;;AA0HK;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAxBA;;AAAA;AAAA;AAAA;;AAAA;AAlGL;;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAkGK;;;AAAA;;AApCA;;AAAA;AAAA;AAAA;;AAAA;AA9DL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;AA8DK;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAhCA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AALA;;AAAA;AAAA;AAAA;;AAAA;AAzBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAyBK;;;AAAA;;AAzBL;;AAAA;;;;;;;;;AAkWA;;;AAGI;;;;;;;;;;;;;AAAA;;;AAAA;;;AAAA;;AA5UJ;;;AAEe;;AAAA;;AAAwB;;AAAxB;AAAP;AACO;;AAAA;;AAAsB;;;;AAAtB;AAAP;;AAKU;AAME;;AACA;;;;;;;;;;AAFG;;;;;;;;;;;;;AADD;;;;;;;AADK;;;AADN;;;AADH;;;;AADA;;;AAAA;;;AAAA;AAYV;;;AAAA;AAGS;AAMG;;AACA;;;;;;;;;;AAFG;;;;;;;;;;;;AADD;;;;;;AADK;;;AADN;;;AADH;;;;AADD;;;AAAA;;;AAAA;AAYT;;;AAAA;;AAER;;;AAMe;AAAA;AAAA;AAAA;AAAA;AAAP;AAGO;;AAAqB;;AAArB;AAAP;AAII;;AAAA;;AAAiB;;AAAjB;AADJ;AAKO;;AAAA;;AAAe;;;;AAAf;AAAP;AAGO;;AAAA;;AAAA;AAAP;AAGA;AAAA;;AAAA;AACA;AAAA;;AAAA;AAgNI;AAEM;AAAA;AAAA;AAAA;AAAA;;AAAA;AADS;;;;;;AAAA;AAAA;AAET;;;AAFS;AAGT;AAAA;AAAA;AAAA;AAAA;;AAAA;AAHS;AAOH;;AACA;;;;;AAFC;;;AADH;;;;;;;;AADI;;;;;;;;;AALd;;;AAAA;;;AAAA;AA7MJ;AA6MI;;AA7MJ;AAGgB;AAAA;AAAA;AAAA;AA6NH;;AADb;AAGW;AAHX;;;AA3NgB;AAAA;AAAA;AAAA;AA4NH;;AADb;AAGW;AAHX;;;AAxNO;AAAA;AAAA;AAAA;AAAP;AAER;;;AASQ;;AAAA;;AAAgB;AACT;;AAAA;;AAAA;;AAAA;AAAP;AAEI;;AAAA;;AAAwB;;AAAxB;AADJ;AAGO;;AAAA;;AAAA;AAAP;AACG;;AAAc;AAAd;AAAX;;;AACY;;AAAA;;AAAA;AAAA;;AAAA;AAAA;AACA;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AACC;;AAAA;AAAb;AACY;;AAAA;;AAAA;AAAA;;AAAA;AAAA;AACA;;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAIZ;;;AAGW;;AAAc;AAAd;AAAX;;;AACmB;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAkC;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAzC;AACC;;AAAA;AAAb;AACmB;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAiC;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAxC;AAIZ;;;AAOY;;AAAc;;AAAd;AADJ;AAGmB;;AAAZ;;AAAA;AAAA;AAAA;AAAA;;AAAP;AACkB;;AAAX;;AAAA;AAAA;AAAA;AAAA;;AAAP;AAEY;;AAAA;AAAA;AAAA;AAAA;AAAA;AACG;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACJ;;AAAA;AAAA;AAAA;AAAA;AAAA;AACG;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEN;;AAAA;;AAAA;AAAwB;;AAAzB;AAAA;AAAP;AAGA;AAAA;;AAAA;AACA;;AAAA;;AAAA;AAC2C;AAAA;AAAA;AAAA;AAA3C;;AAAA;AAAA;;AAAA;;;AAC0C;AAAA;AAAA;AAAA;AAA1C;;AAAA;AAAA;;AAAA;;;AACA;;AAAA;;AACA;AAAA;;AACA;AAAA;;AACA;;AACA;;;;AAOR;;;;;AASY;AAAA;AAAA;AAAA;AAAA;;;AAA+B;AAAA;;AAAA;AAAA;AAA/B;;;;AADJ;AAIG;;AAAc;AAAd;AAAX;;;AACoB;AAAA;AAAA;AAAA;AACO;AAAA;AAAA;AAAA;AAAA;;AAAA;AAOnB;;AAAa;AACN;;AAAA;;AAAA;;AAAA;AAAP;AAEI;;AAAA;;AAAwB;;AAAxB;AADJ;AAGO;;AAAA;;AAAA;AAAP;AACA;;AAAA;;AAAA;;AAAA;;;;AAZK;;AAAA;AAAb;AACoB;AAAA;;AAAA;AAAA;AACO;AAAA;AAAA;AAAA;AAAA;;AAAA;;;;;;;;AAY3B;;;;;;AAO4B;AAAA;AAAA;AAAA;AAAb;;AAAA;AAAP;AACmB;AAAA;AAAA;AAAA;AAAZ;;AAAA;AAAP;AACO;;AAAA;;AAAA;AAAP;AACO;;AAAA;;AAAoB;;AAApB;AAAP;AAES;AAAA;AAAA;AAAA;AAIA;AAAA;AAAA;AAAA;AALH;;AAAA;;AAAN;;;;;;AAUQ;AAJY;;;AAAZ;;AACa;;;AACD;AAAA;AAAA;AAAA;AAAA;;AAAA;AA+HxB;;AAAA;AAAA;;AACI;AAGJ;AAAA;;AAAgB;AACC;AAEb;AA9HA;AAAA;AAC2B;;AAA3B;;AAAA;;AAAA;;;AACA;;;;AAhBoB;;;AAAZ;;AACa;;;AACD;AAAA;AAAA;AAAA;AAAA;;AAAA;;;;AAgB5B;;;AAGW;;AAAc;AAAd;AAAX;;;AACgB;;AAAA;;AAAA;AAAJ;;AACI;;AAAA;;AAAA;AAAJ;;;AACC;;AAAA;AAAb;AACgB;;AAAA;;AAAA;AAAJ;;AACI;;AAAA;;AAAA;AAAJ;;;AAIZ;;;AAGe;;AAAA;;AAAA;AAAP;AACW;AAAA;;AAAA;AAAA;AAAJ;AAAP;AAGG;;AAAW;AAAX;AAAX;;;AACiC;AAAA;AAAA;AAAA;AAArB;;AAAA;AAAA;AAIJ;;AAAqB;AAArB;;AAFyB;AAAA;AAAA;AAAA;AAArB;;AAAA;AAAA;;;;AAIZ;;;AAGe;AAAA;;AAAA;AAAA;AAAP;AACO;AAAA;;AAAA;AAAA;AAAP;AAGO;;AAAA;;AAAA;;AAAA;AAAP;AAEI;;AAAA;;AAA4B;;AAA5B;AADJ;AAII;;AAAA;;AAAwB;AAAA;;AAAA;AAAA;AAAxB;AADJ;AAKe;;AAAA;;AAAyB;;;AAAzB;AAGf;;;;;;;AAAA;;;AAAA;;;AAAA;;AAOc;;;AACD;;;AACA;AAAb;;AAAA;AAAA;;AA6C8B;;AAAvB;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAP;AAK6B;;AAAtB;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAP",
   "op_pc_offset": 0,
   "pc_events": {
     "1": {
-      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.__algopy_entrypoint_with_init",
       "params": {},
       "block": "main",
       "stack_in": [],
-      "op": "intcblock 0 1 100000 3"
+      "op": "intcblock 0 1 3 4 100000"
     },
-    "9": {
-      "op": "bytecblock 0x151f7c75 \"yes_asset_id\" \"no_asset_id\""
+    "10": {
+      "op": "bytecblock \"asset_yes\" \"asset_no\" \"pool_token\" \"matched_yes_price\" \"matched_no_price\" \"market_closed\" 0x7965735f70726963655f 0x7965735f7175616e746974795f 0x6e6f5f70726963655f 0x6e6f5f7175616e746974795f \"winning_asset\" \"ratio\" 0x151f7c75"
     },
-    "41": {
+    "164": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "166": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "169": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\""
+      ],
+      "stack_out": [
+        "\"asset_yes\""
+      ]
+    },
+    "170": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"asset_yes\"",
+        "0"
+      ]
+    },
+    "171": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "172": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\""
+      ],
+      "stack_out": [
+        "\"asset_no\""
+      ]
+    },
+    "173": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"asset_no\"",
+        "0"
+      ]
+    },
+    "174": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "175": {
+      "op": "bytec_2 // \"pool_token\"",
+      "defined_out": [
+        "\"pool_token\""
+      ],
+      "stack_out": [
+        "\"pool_token\""
+      ]
+    },
+    "176": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"pool_token\"",
+        "0"
+      ]
+    },
+    "177": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "178": {
+      "op": "bytec 11 // \"ratio\"",
+      "defined_out": [
+        "\"ratio\""
+      ],
+      "stack_out": [
+        "\"ratio\""
+      ]
+    },
+    "180": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"ratio\"",
+        "0"
+      ]
+    },
+    "181": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "182": {
+      "op": "bytec_3 // \"matched_yes_price\"",
+      "defined_out": [
+        "\"matched_yes_price\""
+      ],
+      "stack_out": [
+        "\"matched_yes_price\""
+      ]
+    },
+    "183": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"matched_yes_price\"",
+        "0"
+      ]
+    },
+    "184": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "185": {
+      "op": "bytec 4 // \"matched_no_price\"",
+      "defined_out": [
+        "\"matched_no_price\""
+      ],
+      "stack_out": [
+        "\"matched_no_price\""
+      ]
+    },
+    "187": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"matched_no_price\"",
+        "0"
+      ]
+    },
+    "188": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "189": {
+      "op": "bytec 5 // \"market_closed\"",
+      "defined_out": [
+        "\"market_closed\""
+      ],
+      "stack_out": [
+        "\"market_closed\""
+      ]
+    },
+    "191": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"market_closed\"",
+        "0"
+      ]
+    },
+    "192": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "193": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
       "op": "txn NumAppArgs",
       "defined_out": [
-        "tmp%0#1"
+        "tmp%0#2"
       ],
       "stack_out": [
-        "tmp%0#1"
+        "tmp%0#2"
       ]
     },
-    "43": {
-      "op": "bz main_after_if_else@11",
+    "195": {
+      "op": "bz main_bare_routing@17",
       "stack_out": []
     },
-    "46": {
-      "op": "pushbytess 0x372c7930 0x96daca0d 0x60cda873 0xaa90d17b 0xb5ff9514 // method \"create_market(uint64,string,string)void\", method \"fund_contract(pay)void\", method \"create_asset()void\", method \"get_yes_asset_id()uint64\", method \"get_no_asset_id()uint64\"",
+    "198": {
+      "op": "pushbytess 0x96daca0d 0x60cda873 0xadf6bbb6 0x3e85ada6 0x0c4b5e73 0x9b72a47d 0x3172ca9d 0x85a0e63a 0x4a88e055 0x2b37c5c7 0x19393286 0x67590aa6 // method \"fund_contract(pay)void\", method \"create_asset()void\", method \"create_market(pay,asset,asset)uint64\", method \"set_order(uint64,account,uint64,uint64,pay)void\", method \"get_order(uint64,account)(uint64,uint64)\", method \"fill_order(account,account)void\", method \"gas()void\", method \"buyAsset(account,uint64,uint64,pay)void\", method \"swap(axfer,asset,asset)void\", method \"clear_orders(uint64,account)void\", method \"close_market(account,uint64)void\", method \"redeem(account,axfer)void\"",
       "defined_out": [
+        "Method(buyAsset(account,uint64,uint64,pay)void)",
+        "Method(clear_orders(uint64,account)void)",
+        "Method(close_market(account,uint64)void)",
         "Method(create_asset()void)",
-        "Method(create_market(uint64,string,string)void)",
+        "Method(create_market(pay,asset,asset)uint64)",
+        "Method(fill_order(account,account)void)",
         "Method(fund_contract(pay)void)",
-        "Method(get_no_asset_id()uint64)",
-        "Method(get_yes_asset_id()uint64)"
+        "Method(gas()void)",
+        "Method(get_order(uint64,account)(uint64,uint64))",
+        "Method(redeem(account,axfer)void)",
+        "Method(set_order(uint64,account,uint64,uint64,pay)void)",
+        "Method(swap(axfer,asset,asset)void)"
       ],
       "stack_out": [
-        "Method(create_market(uint64,string,string)void)",
         "Method(fund_contract(pay)void)",
         "Method(create_asset()void)",
-        "Method(get_yes_asset_id()uint64)",
-        "Method(get_no_asset_id()uint64)"
+        "Method(create_market(pay,asset,asset)uint64)",
+        "Method(set_order(uint64,account,uint64,uint64,pay)void)",
+        "Method(get_order(uint64,account)(uint64,uint64))",
+        "Method(fill_order(account,account)void)",
+        "Method(gas()void)",
+        "Method(buyAsset(account,uint64,uint64,pay)void)",
+        "Method(swap(axfer,asset,asset)void)",
+        "Method(clear_orders(uint64,account)void)",
+        "Method(close_market(account,uint64)void)",
+        "Method(redeem(account,axfer)void)"
       ]
     },
-    "73": {
+    "260": {
       "op": "txna ApplicationArgs 0",
       "defined_out": [
+        "Method(buyAsset(account,uint64,uint64,pay)void)",
+        "Method(clear_orders(uint64,account)void)",
+        "Method(close_market(account,uint64)void)",
         "Method(create_asset()void)",
-        "Method(create_market(uint64,string,string)void)",
+        "Method(create_market(pay,asset,asset)uint64)",
+        "Method(fill_order(account,account)void)",
         "Method(fund_contract(pay)void)",
-        "Method(get_no_asset_id()uint64)",
-        "Method(get_yes_asset_id()uint64)",
+        "Method(gas()void)",
+        "Method(get_order(uint64,account)(uint64,uint64))",
+        "Method(redeem(account,axfer)void)",
+        "Method(set_order(uint64,account,uint64,uint64,pay)void)",
+        "Method(swap(axfer,asset,asset)void)",
         "tmp%2#0"
       ],
       "stack_out": [
-        "Method(create_market(uint64,string,string)void)",
         "Method(fund_contract(pay)void)",
         "Method(create_asset()void)",
-        "Method(get_yes_asset_id()uint64)",
-        "Method(get_no_asset_id()uint64)",
+        "Method(create_market(pay,asset,asset)uint64)",
+        "Method(set_order(uint64,account,uint64,uint64,pay)void)",
+        "Method(get_order(uint64,account)(uint64,uint64))",
+        "Method(fill_order(account,account)void)",
+        "Method(gas()void)",
+        "Method(buyAsset(account,uint64,uint64,pay)void)",
+        "Method(swap(axfer,asset,asset)void)",
+        "Method(clear_orders(uint64,account)void)",
+        "Method(close_market(account,uint64)void)",
+        "Method(redeem(account,axfer)void)",
         "tmp%2#0"
       ]
     },
-    "76": {
-      "op": "match main_create_market_route@3 main_fund_contract_route@4 main_create_asset_route@5 main_get_yes_asset_id_route@6 main_get_no_asset_id_route@7",
+    "263": {
+      "op": "match main_fund_contract_route@5 main_create_asset_route@6 main_create_market_route@7 main_set_order_route@8 main_get_order_route@9 main_fill_order_route@10 main_gas_route@11 main_buyAsset_route@12 main_swap_route@13 main_clear_orders_route@14 main_close_market_route@15 main_redeem_route@16",
       "stack_out": []
     },
-    "88": {
-      "block": "main_after_if_else@11",
+    "289": {
+      "block": "main_after_if_else@19",
       "stack_in": [],
       "op": "intc_0 // 0",
       "defined_out": [
@@ -80,100 +267,1223 @@
         "tmp%0#0"
       ]
     },
-    "89": {
+    "290": {
       "op": "return",
       "stack_out": []
     },
-    "90": {
-      "block": "main_get_no_asset_id_route@7",
+    "291": {
+      "block": "main_redeem_route@16",
       "stack_in": [],
       "op": "txn OnCompletion",
       "defined_out": [
-        "tmp%26#0"
+        "tmp%84#0"
       ],
       "stack_out": [
-        "tmp%26#0"
+        "tmp%84#0"
       ]
     },
-    "92": {
+    "293": {
       "op": "!",
       "defined_out": [
-        "tmp%27#0"
+        "tmp%85#0"
       ],
       "stack_out": [
-        "tmp%27#0"
+        "tmp%85#0"
       ]
     },
-    "93": {
+    "294": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "94": {
+    "295": {
       "op": "txn ApplicationID",
       "defined_out": [
-        "tmp%28#0"
+        "tmp%86#0"
       ],
       "stack_out": [
-        "tmp%28#0"
+        "tmp%86#0"
       ]
     },
-    "96": {
+    "297": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "97": {
-      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.get_no_asset_id",
-      "op": "callsub get_no_asset_id",
+    "298": {
+      "op": "txna ApplicationArgs 1",
       "defined_out": [
-        "to_encode%1#0"
+        "reinterpret_bytes[1]%11#0"
       ],
       "stack_out": [
-        "to_encode%1#0"
+        "reinterpret_bytes[1]%11#0"
       ]
     },
-    "100": {
+    "301": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%88#0"
+      ],
+      "stack_out": [
+        "tmp%88#0"
+      ]
+    },
+    "302": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0"
+      ]
+    },
+    "304": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%89#0",
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "tmp%90#0"
+      ]
+    },
+    "306": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%89#0",
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "tmp%90#0",
+        "1"
+      ]
+    },
+    "307": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%5#0",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0"
+      ]
+    },
+    "308": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%5#0",
+        "gtxn_idx%5#0 (copy)",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0",
+        "gtxn_idx%5#0 (copy)"
+      ]
+    },
+    "309": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%5#0",
+        "gtxn_type%5#0",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0",
+        "gtxn_type%5#0"
+      ]
+    },
+    "311": {
+      "op": "intc_3 // axfer",
+      "defined_out": [
+        "axfer",
+        "gtxn_idx%5#0",
+        "gtxn_type%5#0",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0",
+        "gtxn_type%5#0",
+        "axfer"
+      ]
+    },
+    "312": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%5#0",
+        "gtxn_type_matches%5#0",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0",
+        "gtxn_type_matches%5#0"
+      ]
+    },
+    "313": {
+      "error": "transaction type is axfer",
+      "op": "assert // transaction type is axfer",
+      "stack_out": [
+        "tmp%89#0",
+        "gtxn_idx%5#0"
+      ]
+    },
+    "314": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.redeem",
+      "op": "callsub redeem",
+      "stack_out": []
+    },
+    "317": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "318": {
+      "op": "return",
+      "stack_out": []
+    },
+    "319": {
+      "block": "main_close_market_route@15",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%77#0"
+      ],
+      "stack_out": [
+        "tmp%77#0"
+      ]
+    },
+    "321": {
+      "op": "!",
+      "defined_out": [
+        "tmp%78#0"
+      ],
+      "stack_out": [
+        "tmp%78#0"
+      ]
+    },
+    "322": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "323": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%79#0"
+      ]
+    },
+    "325": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "326": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[1]%10#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[1]%10#0"
+      ]
+    },
+    "329": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%81#0"
+      ],
+      "stack_out": [
+        "tmp%81#0"
+      ]
+    },
+    "330": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%82#0"
+      ],
+      "stack_out": [
+        "tmp%82#0"
+      ]
+    },
+    "332": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[8]%7#0",
+        "tmp%82#0"
+      ],
+      "stack_out": [
+        "tmp%82#0",
+        "reinterpret_bytes[8]%7#0"
+      ]
+    },
+    "335": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%82#0",
+        "tmp%83#0"
+      ],
+      "stack_out": [
+        "tmp%82#0",
+        "tmp%83#0"
+      ]
+    },
+    "336": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.close_market",
+      "op": "callsub close_market",
+      "stack_out": []
+    },
+    "339": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "340": {
+      "op": "return",
+      "stack_out": []
+    },
+    "341": {
+      "block": "main_clear_orders_route@14",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%70#0"
+      ],
+      "stack_out": [
+        "tmp%70#0"
+      ]
+    },
+    "343": {
+      "op": "!",
+      "defined_out": [
+        "tmp%71#0"
+      ],
+      "stack_out": [
+        "tmp%71#0"
+      ]
+    },
+    "344": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "345": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%72#0"
+      ],
+      "stack_out": [
+        "tmp%72#0"
+      ]
+    },
+    "347": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "348": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[8]%6#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[8]%6#0"
+      ]
+    },
+    "351": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%74#0"
+      ],
+      "stack_out": [
+        "tmp%74#0"
+      ]
+    },
+    "352": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%9#0",
+        "tmp%74#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "reinterpret_bytes[1]%9#0"
+      ]
+    },
+    "355": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%75#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%75#0"
+      ]
+    },
+    "356": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0"
+      ]
+    },
+    "358": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.clear_orders",
+      "op": "callsub clear_orders",
+      "stack_out": []
+    },
+    "361": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "362": {
+      "op": "return",
+      "stack_out": []
+    },
+    "363": {
+      "block": "main_swap_route@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%61#0"
+      ],
+      "stack_out": [
+        "tmp%61#0"
+      ]
+    },
+    "365": {
+      "op": "!",
+      "defined_out": [
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%62#0"
+      ]
+    },
+    "366": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "367": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%63#0"
+      ]
+    },
+    "369": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "370": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%65#0"
+      ],
+      "stack_out": [
+        "tmp%65#0"
+      ]
+    },
+    "372": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%65#0"
+      ],
+      "stack_out": [
+        "tmp%65#0",
+        "1"
+      ]
+    },
+    "373": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%4#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0"
+      ]
+    },
+    "374": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "gtxn_idx%4#0 (copy)"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "gtxn_idx%4#0 (copy)"
+      ]
+    },
+    "375": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "gtxn_type%4#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "gtxn_type%4#0"
+      ]
+    },
+    "377": {
+      "op": "intc_3 // axfer",
+      "defined_out": [
+        "axfer",
+        "gtxn_idx%4#0",
+        "gtxn_type%4#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "gtxn_type%4#0",
+        "axfer"
+      ]
+    },
+    "378": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "gtxn_type_matches%4#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "gtxn_type_matches%4#0"
+      ]
+    },
+    "379": {
+      "error": "transaction type is axfer",
+      "op": "assert // transaction type is axfer",
+      "stack_out": [
+        "gtxn_idx%4#0"
+      ]
+    },
+    "380": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "reinterpret_bytes[1]%7#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "reinterpret_bytes[1]%7#0"
+      ]
+    },
+    "383": {
+      "op": "btoi",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "tmp%66#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "tmp%66#0"
+      ]
+    },
+    "384": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0"
+      ]
+    },
+    "386": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "reinterpret_bytes[1]%8#0",
+        "tmp%67#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0",
+        "reinterpret_bytes[1]%8#0"
+      ]
+    },
+    "389": {
+      "op": "btoi",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0",
+        "tmp%68#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0",
+        "tmp%68#0"
+      ]
+    },
+    "390": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0",
+        "tmp%69#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%4#0",
+        "tmp%67#0",
+        "tmp%69#0"
+      ]
+    },
+    "392": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.swap",
+      "op": "callsub swap",
+      "stack_out": []
+    },
+    "395": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "396": {
+      "op": "return",
+      "stack_out": []
+    },
+    "397": {
+      "block": "main_buyAsset_route@12",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%52#0"
+      ],
+      "stack_out": [
+        "tmp%52#0"
+      ]
+    },
+    "399": {
+      "op": "!",
+      "defined_out": [
+        "tmp%53#0"
+      ],
+      "stack_out": [
+        "tmp%53#0"
+      ]
+    },
+    "400": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "401": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%54#0"
+      ],
+      "stack_out": [
+        "tmp%54#0"
+      ]
+    },
+    "403": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "404": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[1]%6#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[1]%6#0"
+      ]
+    },
+    "407": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%56#0"
+      ],
+      "stack_out": [
+        "tmp%56#0"
+      ]
+    },
+    "408": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "410": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[8]%4#0",
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "reinterpret_bytes[8]%4#0"
+      ]
+    },
+    "413": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%57#0",
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0"
+      ]
+    },
+    "414": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "reinterpret_bytes[8]%5#0",
+        "tmp%57#0",
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "reinterpret_bytes[8]%5#0"
+      ]
+    },
+    "417": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ]
+    },
+    "418": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "tmp%60#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "tmp%60#0"
+      ]
+    },
+    "420": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "tmp%60#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "tmp%60#0",
+        "1"
+      ]
+    },
+    "421": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%3#0",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0"
+      ]
+    },
+    "422": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%3#0",
+        "gtxn_idx%3#0 (copy)",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0",
+        "gtxn_idx%3#0 (copy)"
+      ]
+    },
+    "423": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%3#0",
+        "gtxn_type%3#0",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0",
+        "gtxn_type%3#0"
+      ]
+    },
+    "425": {
+      "op": "intc_1 // pay",
+      "defined_out": [
+        "gtxn_idx%3#0",
+        "gtxn_type%3#0",
+        "pay",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0",
+        "gtxn_type%3#0",
+        "pay"
+      ]
+    },
+    "426": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%3#0",
+        "gtxn_type_matches%3#0",
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0",
+        "gtxn_type_matches%3#0"
+      ]
+    },
+    "427": {
+      "error": "transaction type is pay",
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "tmp%57#0",
+        "tmp%58#0",
+        "tmp%59#0",
+        "gtxn_idx%3#0"
+      ]
+    },
+    "428": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.buyAsset",
+      "op": "callsub buyAsset",
+      "stack_out": []
+    },
+    "431": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "432": {
+      "op": "return",
+      "stack_out": []
+    },
+    "433": {
+      "block": "main_gas_route@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%48#0"
+      ],
+      "stack_out": [
+        "tmp%48#0"
+      ]
+    },
+    "435": {
+      "op": "!",
+      "defined_out": [
+        "tmp%49#0"
+      ],
+      "stack_out": [
+        "tmp%49#0"
+      ]
+    },
+    "436": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "437": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%50#0"
+      ],
+      "stack_out": [
+        "tmp%50#0"
+      ]
+    },
+    "439": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "440": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "441": {
+      "op": "return",
+      "stack_out": []
+    },
+    "442": {
+      "block": "main_fill_order_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "444": {
+      "op": "!",
+      "defined_out": [
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0"
+      ]
+    },
+    "445": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "446": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "448": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "449": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[1]%4#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[1]%4#0"
+      ]
+    },
+    "452": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "453": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0"
+      ]
+    },
+    "455": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%5#0",
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "reinterpret_bytes[1]%5#0"
+      ]
+    },
+    "458": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ]
+    },
+    "459": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ]
+    },
+    "461": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.fill_order",
+      "op": "callsub fill_order",
+      "stack_out": []
+    },
+    "464": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "465": {
+      "op": "return",
+      "stack_out": []
+    },
+    "466": {
+      "block": "main_get_order_route@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "468": {
+      "op": "!",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "469": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "470": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "472": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "473": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[8]%3#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[8]%3#0"
+      ]
+    },
+    "476": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0"
+      ]
+    },
+    "477": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%3#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "reinterpret_bytes[1]%3#0"
+      ]
+    },
+    "480": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ]
+    },
+    "481": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%38#0"
+      ]
+    },
+    "483": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.get_order",
+      "op": "callsub get_order",
+      "defined_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0"
+      ],
+      "stack_out": [
+        "elements_to_encode%0#0",
+        "elements_to_encode%1#0"
+      ]
+    },
+    "486": {
+      "op": "swap",
+      "stack_out": [
+        "elements_to_encode%1#0",
+        "elements_to_encode%0#0"
+      ]
+    },
+    "487": {
       "op": "itob",
       "defined_out": [
+        "elements_to_encode%1#0",
         "val_as_bytes%1#0"
       ],
       "stack_out": [
+        "elements_to_encode%1#0",
         "val_as_bytes%1#0"
       ]
     },
-    "101": {
-      "op": "bytec_0 // 0x151f7c75",
+    "488": {
+      "op": "swap",
+      "stack_out": [
+        "val_as_bytes%1#0",
+        "elements_to_encode%1#0"
+      ]
+    },
+    "489": {
+      "op": "itob",
       "defined_out": [
-        "0x151f7c75",
-        "val_as_bytes%1#0"
+        "val_as_bytes%1#0",
+        "val_as_bytes%2#0"
       ],
       "stack_out": [
         "val_as_bytes%1#0",
+        "val_as_bytes%2#0"
+      ]
+    },
+    "490": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_tuple_buffer%2#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%2#0"
+      ]
+    },
+    "491": {
+      "op": "bytec 12 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_tuple_buffer%2#0"
+      ],
+      "stack_out": [
+        "encoded_tuple_buffer%2#0",
         "0x151f7c75"
       ]
     },
-    "102": {
+    "493": {
       "op": "swap",
       "stack_out": [
         "0x151f7c75",
-        "val_as_bytes%1#0"
+        "encoded_tuple_buffer%2#0"
       ]
     },
-    "103": {
+    "494": {
       "op": "concat",
       "defined_out": [
-        "tmp%30#0"
+        "tmp%39#0"
       ],
       "stack_out": [
-        "tmp%30#0"
+        "tmp%39#0"
       ]
     },
-    "104": {
+    "495": {
       "op": "log",
       "stack_out": []
     },
-    "105": {
+    "496": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -182,23 +1492,14 @@
         "tmp%0#0"
       ]
     },
-    "106": {
+    "497": {
       "op": "return",
       "stack_out": []
     },
-    "107": {
-      "block": "main_get_yes_asset_id_route@6",
+    "498": {
+      "block": "main_set_order_route@8",
       "stack_in": [],
       "op": "txn OnCompletion",
-      "defined_out": [
-        "tmp%21#0"
-      ],
-      "stack_out": [
-        "tmp%21#0"
-      ]
-    },
-    "109": {
-      "op": "!",
       "defined_out": [
         "tmp%22#0"
       ],
@@ -206,132 +1507,289 @@
         "tmp%22#0"
       ]
     },
-    "110": {
-      "error": "OnCompletion is not NoOp",
-      "op": "assert // OnCompletion is not NoOp",
-      "stack_out": []
-    },
-    "111": {
-      "op": "txn ApplicationID",
-      "defined_out": [
-        "tmp%23#0"
-      ],
-      "stack_out": [
-        "tmp%23#0"
-      ]
-    },
-    "113": {
-      "error": "can only call when not creating",
-      "op": "assert // can only call when not creating",
-      "stack_out": []
-    },
-    "114": {
-      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.get_yes_asset_id",
-      "op": "callsub get_yes_asset_id",
-      "defined_out": [
-        "to_encode%0#0"
-      ],
-      "stack_out": [
-        "to_encode%0#0"
-      ]
-    },
-    "117": {
-      "op": "itob",
-      "defined_out": [
-        "val_as_bytes%0#0"
-      ],
-      "stack_out": [
-        "val_as_bytes%0#0"
-      ]
-    },
-    "118": {
-      "op": "bytec_0 // 0x151f7c75",
-      "defined_out": [
-        "0x151f7c75",
-        "val_as_bytes%0#0"
-      ],
-      "stack_out": [
-        "val_as_bytes%0#0",
-        "0x151f7c75"
-      ]
-    },
-    "119": {
-      "op": "swap",
-      "stack_out": [
-        "0x151f7c75",
-        "val_as_bytes%0#0"
-      ]
-    },
-    "120": {
-      "op": "concat",
-      "defined_out": [
-        "tmp%25#0"
-      ],
-      "stack_out": [
-        "tmp%25#0"
-      ]
-    },
-    "121": {
-      "op": "log",
-      "stack_out": []
-    },
-    "122": {
-      "op": "intc_1 // 1",
-      "defined_out": [
-        "tmp%0#0"
-      ],
-      "stack_out": [
-        "tmp%0#0"
-      ]
-    },
-    "123": {
-      "op": "return",
-      "stack_out": []
-    },
-    "124": {
-      "block": "main_create_asset_route@5",
-      "stack_in": [],
-      "op": "txn OnCompletion",
-      "defined_out": [
-        "tmp%17#0"
-      ],
-      "stack_out": [
-        "tmp%17#0"
-      ]
-    },
-    "126": {
+    "500": {
       "op": "!",
       "defined_out": [
-        "tmp%18#0"
+        "tmp%23#0"
       ],
       "stack_out": [
-        "tmp%18#0"
+        "tmp%23#0"
       ]
     },
-    "127": {
+    "501": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "128": {
+    "502": {
       "op": "txn ApplicationID",
       "defined_out": [
-        "tmp%19#0"
+        "tmp%24#0"
       ],
       "stack_out": [
-        "tmp%19#0"
+        "tmp%24#0"
       ]
     },
-    "130": {
+    "504": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "131": {
-      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.create_asset",
-      "op": "callsub create_asset"
+    "505": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[8]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[8]%0#0"
+      ]
     },
-    "134": {
+    "508": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0"
+      ]
+    },
+    "509": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%2#0",
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "reinterpret_bytes[1]%2#0"
+      ]
+    },
+    "512": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%26#0",
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%27#0"
+      ]
+    },
+    "513": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%26#0",
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0"
+      ]
+    },
+    "515": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "reinterpret_bytes[8]%1#0",
+        "tmp%26#0",
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "reinterpret_bytes[8]%1#0"
+      ]
+    },
+    "518": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0"
+      ]
+    },
+    "519": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "reinterpret_bytes[8]%2#0",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "reinterpret_bytes[8]%2#0"
+      ]
+    },
+    "522": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ]
+    },
+    "523": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "tmp%31#0"
+      ]
+    },
+    "525": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "tmp%31#0",
+        "1"
+      ]
+    },
+    "526": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%2#0",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0"
+      ]
+    },
+    "527": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%2#0",
+        "gtxn_idx%2#0 (copy)",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0",
+        "gtxn_idx%2#0 (copy)"
+      ]
+    },
+    "528": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%2#0",
+        "gtxn_type%2#0",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0",
+        "gtxn_type%2#0"
+      ]
+    },
+    "530": {
+      "op": "intc_1 // pay",
+      "defined_out": [
+        "gtxn_idx%2#0",
+        "gtxn_type%2#0",
+        "pay",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0",
+        "gtxn_type%2#0",
+        "pay"
+      ]
+    },
+    "531": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%2#0",
+        "gtxn_type_matches%2#0",
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0",
+        "gtxn_type_matches%2#0"
+      ]
+    },
+    "532": {
+      "error": "transaction type is pay",
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "tmp%26#0",
+        "tmp%28#0",
+        "tmp%29#0",
+        "tmp%30#0",
+        "gtxn_idx%2#0"
+      ]
+    },
+    "533": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.set_order",
+      "op": "callsub set_order",
+      "stack_out": []
+    },
+    "536": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -340,12 +1798,12 @@
         "tmp%0#0"
       ]
     },
-    "135": {
+    "537": {
       "op": "return",
       "stack_out": []
     },
-    "136": {
-      "block": "main_fund_contract_route@4",
+    "538": {
+      "block": "main_create_market_route@7",
       "stack_in": [],
       "op": "txn OnCompletion",
       "defined_out": [
@@ -355,7 +1813,7 @@
         "tmp%12#0"
       ]
     },
-    "138": {
+    "540": {
       "op": "!",
       "defined_out": [
         "tmp%13#0"
@@ -364,12 +1822,12 @@
         "tmp%13#0"
       ]
     },
-    "139": {
+    "541": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "140": {
+    "542": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%14#0"
@@ -378,12 +1836,12 @@
         "tmp%14#0"
       ]
     },
-    "142": {
+    "544": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "143": {
+    "545": {
       "op": "txn GroupIndex",
       "defined_out": [
         "tmp%16#0"
@@ -392,7 +1850,7 @@
         "tmp%16#0"
       ]
     },
-    "145": {
+    "547": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -403,7 +1861,319 @@
         "1"
       ]
     },
-    "146": {
+    "548": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%1#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0"
+      ]
+    },
+    "549": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_idx%1#0 (copy)"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "gtxn_idx%1#0 (copy)"
+      ]
+    },
+    "550": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0"
+      ]
+    },
+    "552": {
+      "op": "intc_1 // pay",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0",
+        "pay"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0",
+        "pay"
+      ]
+    },
+    "553": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type_matches%1#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type_matches%1#0"
+      ]
+    },
+    "554": {
+      "error": "transaction type is pay",
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "gtxn_idx%1#0"
+      ]
+    },
+    "555": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "reinterpret_bytes[1]%0#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "reinterpret_bytes[1]%0#0"
+      ]
+    },
+    "558": {
+      "op": "btoi",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "tmp%17#0"
+      ]
+    },
+    "559": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0"
+      ]
+    },
+    "561": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "reinterpret_bytes[1]%1#0",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0",
+        "reinterpret_bytes[1]%1#0"
+      ]
+    },
+    "564": {
+      "op": "btoi",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0",
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0",
+        "tmp%19#0"
+      ]
+    },
+    "565": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0",
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%1#0",
+        "tmp%18#0",
+        "tmp%20#0"
+      ]
+    },
+    "567": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.create_market",
+      "op": "callsub create_market",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "570": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "571": {
+      "op": "bytec 12 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "573": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "574": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "575": {
+      "op": "log",
+      "stack_out": []
+    },
+    "576": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "577": {
+      "op": "return",
+      "stack_out": []
+    },
+    "578": {
+      "block": "main_create_asset_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "580": {
+      "op": "!",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "581": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "582": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "584": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "585": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.create_asset",
+      "op": "callsub create_asset"
+    },
+    "588": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "589": {
+      "op": "return",
+      "stack_out": []
+    },
+    "590": {
+      "block": "main_fund_contract_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "592": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "593": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "594": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "596": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "597": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "599": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "1"
+      ]
+    },
+    "600": {
       "op": "-",
       "defined_out": [
         "gtxn_idx%0#0"
@@ -412,7 +2182,7 @@
         "gtxn_idx%0#0"
       ]
     },
-    "147": {
+    "601": {
       "op": "dup",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -423,7 +2193,7 @@
         "gtxn_idx%0#0 (copy)"
       ]
     },
-    "148": {
+    "602": {
       "op": "gtxns TypeEnum",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -434,7 +2204,7 @@
         "gtxn_type%0#0"
       ]
     },
-    "150": {
+    "604": {
       "op": "intc_1 // pay",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -447,7 +2217,7 @@
         "pay"
       ]
     },
-    "151": {
+    "605": {
       "op": "==",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -458,19 +2228,19 @@
         "gtxn_type_matches%0#0"
       ]
     },
-    "152": {
+    "606": {
       "error": "transaction type is pay",
       "op": "assert // transaction type is pay",
       "stack_out": [
         "gtxn_idx%0#0"
       ]
     },
-    "153": {
+    "607": {
       "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.fund_contract",
       "op": "callsub fund_contract",
       "stack_out": []
     },
-    "156": {
+    "610": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -479,130 +2249,49 @@
         "tmp%0#0"
       ]
     },
-    "157": {
+    "611": {
       "op": "return",
       "stack_out": []
     },
-    "158": {
-      "block": "main_create_market_route@3",
+    "612": {
+      "block": "main_bare_routing@17",
       "stack_in": [],
       "op": "txn OnCompletion",
       "defined_out": [
-        "tmp%3#0"
+        "tmp%91#0"
       ],
       "stack_out": [
-        "tmp%3#0"
+        "tmp%91#0"
       ]
     },
-    "160": {
-      "op": "!",
-      "defined_out": [
-        "tmp%4#0"
-      ],
-      "stack_out": [
-        "tmp%4#0"
-      ]
-    },
-    "161": {
-      "error": "OnCompletion is not NoOp",
-      "op": "assert // OnCompletion is not NoOp",
+    "614": {
+      "op": "bnz main_after_if_else@19",
       "stack_out": []
     },
-    "162": {
+    "617": {
       "op": "txn ApplicationID",
       "defined_out": [
-        "tmp%5#0"
+        "tmp%92#0"
       ],
       "stack_out": [
-        "tmp%5#0"
+        "tmp%92#0"
       ]
     },
-    "164": {
+    "619": {
       "op": "!",
       "defined_out": [
-        "tmp%6#0"
+        "tmp%93#0"
       ],
       "stack_out": [
-        "tmp%6#0"
+        "tmp%93#0"
       ]
     },
-    "165": {
+    "620": {
       "error": "can only call when creating",
       "op": "assert // can only call when creating",
       "stack_out": []
     },
-    "166": {
-      "op": "txna ApplicationArgs 1",
-      "defined_out": [
-        "reinterpret_bytes[8]%0#0"
-      ],
-      "stack_out": [
-        "reinterpret_bytes[8]%0#0"
-      ]
-    },
-    "169": {
-      "op": "btoi",
-      "defined_out": [
-        "tmp%7#0"
-      ],
-      "stack_out": [
-        "tmp%7#0"
-      ]
-    },
-    "170": {
-      "op": "txna ApplicationArgs 2",
-      "defined_out": [
-        "tmp%7#0",
-        "tmp%8#0"
-      ],
-      "stack_out": [
-        "tmp%7#0",
-        "tmp%8#0"
-      ]
-    },
-    "173": {
-      "op": "extract 2 0",
-      "defined_out": [
-        "tmp%7#0",
-        "tmp%9#0"
-      ],
-      "stack_out": [
-        "tmp%7#0",
-        "tmp%9#0"
-      ]
-    },
-    "176": {
-      "op": "txna ApplicationArgs 3",
-      "defined_out": [
-        "tmp%10#0",
-        "tmp%7#0",
-        "tmp%9#0"
-      ],
-      "stack_out": [
-        "tmp%7#0",
-        "tmp%9#0",
-        "tmp%10#0"
-      ]
-    },
-    "179": {
-      "op": "extract 2 0",
-      "defined_out": [
-        "tmp%11#0",
-        "tmp%7#0",
-        "tmp%9#0"
-      ],
-      "stack_out": [
-        "tmp%7#0",
-        "tmp%9#0",
-        "tmp%11#0"
-      ]
-    },
-    "182": {
-      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket.create_market",
-      "op": "callsub create_market",
-      "stack_out": []
-    },
-    "185": {
+    "621": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -611,122 +2300,97 @@
         "tmp%0#0"
       ]
     },
-    "186": {
+    "622": {
       "op": "return",
       "stack_out": []
     },
-    "187": {
-      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.create_market",
+    "623": {
+      "subroutine": "smart_contracts.prediction_market.contract.do_asset_transfer",
       "params": {
-        "market_id#0": "uint64",
-        "question#0": "bytes",
-        "description#0": "bytes"
+        "receiver#0": "bytes",
+        "asset#0": "uint64",
+        "amount#0": "uint64"
       },
-      "block": "create_market",
+      "block": "do_asset_transfer",
       "stack_in": [],
       "op": "proto 3 0"
     },
-    "190": {
-      "op": "pushbytes \"market_id\"",
-      "defined_out": [
-        "\"market_id\""
-      ],
-      "stack_out": [
-        "\"market_id\""
-      ]
+    "626": {
+      "op": "itxn_begin"
     },
-    "201": {
+    "627": {
       "op": "frame_dig -3",
       "defined_out": [
-        "\"market_id\"",
-        "market_id#0 (copy)"
+        "receiver#0 (copy)"
       ],
       "stack_out": [
-        "\"market_id\"",
-        "market_id#0 (copy)"
+        "receiver#0 (copy)"
       ]
     },
-    "203": {
-      "op": "app_global_put",
+    "629": {
+      "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "204": {
-      "op": "pushbytes \"question\"",
-      "defined_out": [
-        "\"question\""
-      ],
-      "stack_out": [
-        "\"question\""
-      ]
-    },
-    "214": {
-      "op": "frame_dig -2",
-      "defined_out": [
-        "\"question\"",
-        "question#0 (copy)"
-      ],
-      "stack_out": [
-        "\"question\"",
-        "question#0 (copy)"
-      ]
-    },
-    "216": {
-      "op": "app_global_put",
-      "stack_out": []
-    },
-    "217": {
-      "op": "pushbytes \"description\"",
-      "defined_out": [
-        "\"description\""
-      ],
-      "stack_out": [
-        "\"description\""
-      ]
-    },
-    "230": {
+    "631": {
       "op": "frame_dig -1",
       "defined_out": [
-        "\"description\"",
-        "description#0 (copy)"
+        "amount#0 (copy)"
       ],
       "stack_out": [
-        "\"description\"",
-        "description#0 (copy)"
+        "amount#0 (copy)"
       ]
     },
-    "232": {
-      "op": "app_global_put",
+    "633": {
+      "op": "itxn_field AssetAmount",
       "stack_out": []
     },
-    "233": {
-      "op": "pushbytes \"creator\"",
+    "635": {
+      "op": "frame_dig -2",
       "defined_out": [
-        "\"creator\""
+        "asset#0 (copy)"
       ],
       "stack_out": [
-        "\"creator\""
+        "asset#0 (copy)"
       ]
     },
-    "242": {
-      "op": "global CurrentApplicationAddress",
-      "defined_out": [
-        "\"creator\"",
-        "new_state_value%0#0"
-      ],
-      "stack_out": [
-        "\"creator\"",
-        "new_state_value%0#0"
-      ]
-    },
-    "244": {
-      "op": "app_global_put",
+    "637": {
+      "op": "itxn_field XferAsset",
       "stack_out": []
     },
-    "245": {
+    "639": {
+      "op": "intc_3 // axfer",
+      "defined_out": [
+        "axfer"
+      ],
+      "stack_out": [
+        "axfer"
+      ]
+    },
+    "640": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "642": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "643": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "645": {
+      "op": "itxn_submit"
+    },
+    "646": {
       "retsub": true,
       "op": "retsub"
     },
-    "246": {
+    "647": {
       "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.fund_contract",
       "params": {
         "payment_txn#0": "uint64"
@@ -735,7 +2399,7 @@
       "stack_in": [],
       "op": "proto 1 0"
     },
-    "249": {
+    "650": {
       "op": "frame_dig -1",
       "defined_out": [
         "payment_txn#0 (copy)"
@@ -744,7 +2408,7 @@
         "payment_txn#0 (copy)"
       ]
     },
-    "251": {
+    "652": {
       "op": "gtxns Receiver",
       "defined_out": [
         "tmp%0#0"
@@ -753,7 +2417,7 @@
         "tmp%0#0"
       ]
     },
-    "253": {
+    "654": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "tmp%0#0",
@@ -764,7 +2428,7 @@
         "tmp%1#0"
       ]
     },
-    "255": {
+    "656": {
       "op": "==",
       "defined_out": [
         "tmp%2#0"
@@ -773,17 +2437,17 @@
         "tmp%2#0"
       ]
     },
-    "256": {
+    "657": {
       "op": "assert",
       "stack_out": []
     },
-    "257": {
+    "658": {
       "op": "frame_dig -1",
       "stack_out": [
         "payment_txn#0 (copy)"
       ]
     },
-    "259": {
+    "660": {
       "op": "gtxns Amount",
       "defined_out": [
         "tmp%3#0"
@@ -792,7 +2456,7 @@
         "tmp%3#0"
       ]
     },
-    "261": {
+    "662": {
       "op": "pushint 400000 // 400000",
       "defined_out": [
         "400000",
@@ -803,7 +2467,7 @@
         "400000"
       ]
     },
-    "265": {
+    "666": {
       "op": "==",
       "defined_out": [
         "tmp%4#0"
@@ -812,22 +2476,22 @@
         "tmp%4#0"
       ]
     },
-    "266": {
+    "667": {
       "op": "assert",
       "stack_out": []
     },
-    "267": {
+    "668": {
       "retsub": true,
       "op": "retsub"
     },
-    "268": {
+    "669": {
       "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.create_asset",
       "params": {},
       "block": "create_asset",
       "stack_in": [],
       "op": "itxn_begin"
     },
-    "269": {
+    "670": {
       "op": "global CreatorAddress",
       "defined_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
@@ -836,7 +2500,7 @@
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "271": {
+    "672": {
       "op": "dupn 3",
       "defined_out": [
         "inner_txn_params%0%%param_ConfigAssetClawback_idx_0#0",
@@ -851,7 +2515,7 @@
         "inner_txn_params%0%%param_ConfigAssetClawback_idx_0#0"
       ]
     },
-    "273": {
+    "674": {
       "op": "itxn_field ConfigAssetClawback",
       "stack_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0",
@@ -859,37 +2523,37 @@
         "inner_txn_params%0%%param_ConfigAssetFreeze_idx_0#0"
       ]
     },
-    "275": {
+    "676": {
       "op": "itxn_field ConfigAssetFreeze",
       "stack_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0",
         "inner_txn_params%0%%param_ConfigAssetReserve_idx_0#0"
       ]
     },
-    "277": {
+    "678": {
       "op": "itxn_field ConfigAssetReserve",
       "stack_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "279": {
+    "680": {
       "op": "itxn_field ConfigAssetManager",
       "stack_out": []
     },
-    "281": {
-      "op": "pushbytes \"buy YES\"",
+    "682": {
+      "op": "pushbytes \"YES_asset\"",
       "defined_out": [
-        "\"buy YES\""
+        "\"YES_asset\""
       ],
       "stack_out": [
-        "\"buy YES\""
+        "\"YES_asset\""
       ]
     },
-    "290": {
+    "693": {
       "op": "itxn_field ConfigAssetName",
       "stack_out": []
     },
-    "292": {
+    "695": {
       "op": "pushbytes \"YES\"",
       "defined_out": [
         "\"YES\""
@@ -898,11 +2562,11 @@
         "\"YES\""
       ]
     },
-    "297": {
+    "700": {
       "op": "itxn_field ConfigAssetUnitName",
       "stack_out": []
     },
-    "299": {
+    "702": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
@@ -911,22 +2575,22 @@
         "0"
       ]
     },
-    "300": {
+    "703": {
       "op": "itxn_field ConfigAssetDefaultFrozen",
       "stack_out": []
     },
-    "302": {
+    "705": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "303": {
+    "706": {
       "op": "itxn_field ConfigAssetDecimals",
       "stack_out": []
     },
-    "305": {
-      "op": "intc_2 // 100000",
+    "708": {
+      "op": "intc 4 // 100000",
       "defined_out": [
         "100000"
       ],
@@ -934,12 +2598,12 @@
         "100000"
       ]
     },
-    "306": {
+    "710": {
       "op": "itxn_field ConfigAssetTotal",
       "stack_out": []
     },
-    "308": {
-      "op": "intc_3 // acfg",
+    "712": {
+      "op": "intc_2 // acfg",
       "defined_out": [
         "acfg"
       ],
@@ -947,51 +2611,51 @@
         "acfg"
       ]
     },
-    "309": {
+    "713": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "311": {
+    "715": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "312": {
+    "716": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "314": {
+    "718": {
       "op": "itxn_submit"
     },
-    "315": {
-      "op": "bytec_1 // \"yes_asset_id\"",
+    "719": {
+      "op": "bytec_0 // \"asset_yes\"",
       "defined_out": [
-        "\"yes_asset_id\""
+        "\"asset_yes\""
       ],
       "stack_out": [
-        "\"yes_asset_id\""
+        "\"asset_yes\""
       ]
     },
-    "316": {
+    "720": {
       "op": "itxn CreatedAssetID",
       "defined_out": [
-        "\"yes_asset_id\"",
-        "yes_creation_tx.CreatedAssetID#0"
+        "\"asset_yes\"",
+        "yes_txn.CreatedAssetID#0"
       ],
       "stack_out": [
-        "\"yes_asset_id\"",
-        "yes_creation_tx.CreatedAssetID#0"
+        "\"asset_yes\"",
+        "yes_txn.CreatedAssetID#0"
       ]
     },
-    "318": {
+    "722": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "319": {
+    "723": {
       "op": "itxn_begin"
     },
-    "320": {
+    "724": {
       "op": "global CreatorAddress",
       "defined_out": [
         "inner_txn_params%1%%param_ConfigAssetManager_idx_0#0"
@@ -1000,7 +2664,7 @@
         "inner_txn_params%1%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "322": {
+    "726": {
       "op": "dupn 3",
       "defined_out": [
         "inner_txn_params%1%%param_ConfigAssetClawback_idx_0#0",
@@ -1015,7 +2679,7 @@
         "inner_txn_params%1%%param_ConfigAssetClawback_idx_0#0"
       ]
     },
-    "324": {
+    "728": {
       "op": "itxn_field ConfigAssetClawback",
       "stack_out": [
         "inner_txn_params%1%%param_ConfigAssetManager_idx_0#0",
@@ -1023,37 +2687,37 @@
         "inner_txn_params%1%%param_ConfigAssetFreeze_idx_0#0"
       ]
     },
-    "326": {
+    "730": {
       "op": "itxn_field ConfigAssetFreeze",
       "stack_out": [
         "inner_txn_params%1%%param_ConfigAssetManager_idx_0#0",
         "inner_txn_params%1%%param_ConfigAssetReserve_idx_0#0"
       ]
     },
-    "328": {
+    "732": {
       "op": "itxn_field ConfigAssetReserve",
       "stack_out": [
         "inner_txn_params%1%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "330": {
+    "734": {
       "op": "itxn_field ConfigAssetManager",
       "stack_out": []
     },
-    "332": {
-      "op": "pushbytes \"buy NO\"",
+    "736": {
+      "op": "pushbytes \"NO_asset\"",
       "defined_out": [
-        "\"buy NO\""
+        "\"NO_asset\""
       ],
       "stack_out": [
-        "\"buy NO\""
+        "\"NO_asset\""
       ]
     },
-    "340": {
+    "746": {
       "op": "itxn_field ConfigAssetName",
       "stack_out": []
     },
-    "342": {
+    "748": {
       "op": "pushbytes \"NO\"",
       "defined_out": [
         "\"NO\""
@@ -1062,96 +2726,103 @@
         "\"NO\""
       ]
     },
-    "346": {
+    "752": {
       "op": "itxn_field ConfigAssetUnitName",
       "stack_out": []
     },
-    "348": {
+    "754": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "349": {
+    "755": {
       "op": "itxn_field ConfigAssetDefaultFrozen",
       "stack_out": []
     },
-    "351": {
+    "757": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "352": {
+    "758": {
       "op": "itxn_field ConfigAssetDecimals",
       "stack_out": []
     },
-    "354": {
-      "op": "intc_2 // 100000",
+    "760": {
+      "op": "intc 4 // 100000",
       "stack_out": [
         "100000"
       ]
     },
-    "355": {
+    "762": {
       "op": "itxn_field ConfigAssetTotal",
       "stack_out": []
     },
-    "357": {
-      "op": "intc_3 // acfg",
+    "764": {
+      "op": "intc_2 // acfg",
       "stack_out": [
         "acfg"
       ]
     },
-    "358": {
+    "765": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "360": {
+    "767": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "361": {
+    "768": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "363": {
+    "770": {
       "op": "itxn_submit"
     },
-    "364": {
-      "op": "bytec_2 // \"no_asset_id\"",
+    "771": {
+      "op": "bytec_1 // \"asset_no\"",
       "defined_out": [
-        "\"no_asset_id\""
+        "\"asset_no\""
       ],
       "stack_out": [
-        "\"no_asset_id\""
+        "\"asset_no\""
       ]
     },
-    "365": {
+    "772": {
       "op": "itxn CreatedAssetID",
       "defined_out": [
-        "\"no_asset_id\"",
-        "no_creation_tx.CreatedAssetID#0"
+        "\"asset_no\"",
+        "no_txn.CreatedAssetID#0"
       ],
       "stack_out": [
-        "\"no_asset_id\"",
-        "no_creation_tx.CreatedAssetID#0"
+        "\"asset_no\"",
+        "no_txn.CreatedAssetID#0"
       ]
     },
-    "367": {
+    "774": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "368": {
+    "775": {
       "retsub": true,
       "op": "retsub"
     },
-    "369": {
-      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.get_yes_asset_id",
-      "params": {},
-      "block": "get_yes_asset_id",
+    "776": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.create_market",
+      "params": {
+        "seed#0": "uint64",
+        "yes_asset#0": "uint64",
+        "no_asset#0": "uint64"
+      },
+      "block": "create_market",
       "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "779": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
@@ -1160,18 +2831,18 @@
         "0"
       ]
     },
-    "370": {
-      "op": "bytec_1 // \"yes_asset_id\"",
+    "780": {
+      "op": "bytec_2 // \"pool_token\"",
       "defined_out": [
-        "\"yes_asset_id\"",
+        "\"pool_token\"",
         "0"
       ],
       "stack_out": [
         "0",
-        "\"yes_asset_id\""
+        "\"pool_token\""
       ]
     },
-    "371": {
+    "781": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1182,22 +2853,4565 @@
         "maybe_exists%0#0"
       ]
     },
-    "372": {
-      "error": "check self.yes_asset_id exists",
-      "op": "assert // check self.yes_asset_id exists",
+    "782": {
+      "error": "check self.pool_token exists",
+      "op": "assert // check self.pool_token exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "373": {
+    "783": {
+      "op": "!",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "784": {
+      "error": "Il mercato \u00e8 gi\u00e0 stato creato",
+      "op": "assert // Il mercato \u00e8 gi\u00e0 stato creato",
+      "stack_out": []
+    },
+    "785": {
+      "op": "global GroupSize",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "787": {
+      "op": "pushint 2 // 2",
+      "defined_out": [
+        "2",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "2"
+      ]
+    },
+    "789": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "790": {
+      "error": "gruppo di transazioni non \u00e8 2",
+      "op": "assert // gruppo di transazioni non \u00e8 2",
+      "stack_out": []
+    },
+    "791": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "seed#0 (copy)"
+      ],
+      "stack_out": [
+        "seed#0 (copy)"
+      ]
+    },
+    "793": {
+      "op": "gtxns Receiver",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "795": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ]
+    },
+    "797": {
+      "op": "==",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "798": {
+      "error": "receiver non \u00e8 all'indirizzo del contratto",
+      "op": "assert // receiver non \u00e8 all'indirizzo del contratto",
+      "stack_out": []
+    },
+    "799": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "seed#0 (copy)"
+      ]
+    },
+    "801": {
+      "op": "gtxns Amount",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "803": {
+      "op": "pushint 300000 // 300000",
+      "defined_out": [
+        "300000",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "300000"
+      ]
+    },
+    "807": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "808": {
+      "error": "amount minimo non soddisfatto",
+      "op": "assert // amount minimo non soddisfatto",
+      "stack_out": []
+    },
+    "809": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "yes_asset#0 (copy)"
+      ],
+      "stack_out": [
+        "yes_asset#0 (copy)"
+      ]
+    },
+    "811": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "no_asset#0 (copy)",
+        "yes_asset#0 (copy)"
+      ],
+      "stack_out": [
+        "yes_asset#0 (copy)",
+        "no_asset#0 (copy)"
+      ]
+    },
+    "813": {
+      "op": "<",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "814": {
+      "error": "asset yes deve essere minore di asset no",
+      "op": "assert // asset yes deve essere minore di asset no",
+      "stack_out": []
+    },
+    "815": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\""
+      ],
+      "stack_out": [
+        "\"asset_yes\""
+      ]
+    },
+    "816": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "\"asset_yes\"",
+        "yes_asset#0 (copy)"
+      ]
+    },
+    "818": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "819": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\""
+      ],
+      "stack_out": [
+        "\"asset_no\""
+      ]
+    },
+    "820": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "\"asset_no\"",
+        "no_asset#0 (copy)"
+      ]
+    },
+    "822": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "823": {
+      "op": "itxn_begin"
+    },
+    "824": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "825": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "stack_out": [
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "826": {
+      "op": "app_global_get_ex",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "827": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "828": {
+      "op": "asset_params_get AssetUnitName",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "830": {
+      "error": "asset exists",
+      "op": "assert // asset exists",
+      "stack_out": [
+        "value%0#0"
+      ]
+    },
+    "831": {
+      "op": "pushbytes 0x4450542d",
+      "defined_out": [
+        "0x4450542d",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "0x4450542d"
+      ]
+    },
+    "837": {
+      "op": "swap",
+      "stack_out": [
+        "0x4450542d",
+        "value%0#0"
+      ]
+    },
+    "838": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "839": {
+      "op": "pushbytes 0x2d",
+      "defined_out": [
+        "0x2d",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0x2d"
+      ]
+    },
+    "842": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "843": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "844": {
+      "op": "bytec_1 // \"asset_no\"",
+      "stack_out": [
+        "tmp%1#1",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "845": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#1",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#1",
+        "maybe_exists%1#0"
+      ]
+    },
+    "846": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#1"
+      ]
+    },
+    "847": {
+      "op": "asset_params_get AssetUnitName",
+      "defined_out": [
+        "check%1#0",
+        "tmp%1#1",
+        "value%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "value%1#0",
+        "check%1#0"
+      ]
+    },
+    "849": {
+      "error": "asset exists",
+      "op": "assert // asset exists",
+      "stack_out": [
+        "tmp%1#1",
+        "value%1#0"
+      ]
+    },
+    "850": {
+      "op": "concat",
+      "defined_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ]
+    },
+    "851": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
+      ]
+    },
+    "853": {
+      "op": "dup",
+      "defined_out": [
+        "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetReserve_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetReserve_idx_0#0"
+      ]
+    },
+    "854": {
+      "op": "itxn_field ConfigAssetReserve",
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
+      ]
+    },
+    "856": {
+      "op": "itxn_field ConfigAssetManager",
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ]
+    },
+    "858": {
+      "op": "intc_2 // 3",
+      "defined_out": [
+        "3",
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "3"
+      ]
+    },
+    "859": {
+      "op": "itxn_field ConfigAssetDecimals",
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ]
+    },
+    "861": {
+      "op": "pushint 10000000000 // 10000000000",
+      "defined_out": [
+        "10000000000",
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "10000000000"
+      ]
+    },
+    "867": {
+      "op": "itxn_field ConfigAssetTotal",
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ]
+    },
+    "869": {
+      "op": "pushbytes 0x646274",
+      "defined_out": [
+        "0x646274",
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0",
+        "0x646274"
+      ]
+    },
+    "874": {
+      "op": "itxn_field ConfigAssetUnitName",
+      "stack_out": [
+        "inner_txn_params%0%%param_ConfigAssetName_idx_0#0"
+      ]
+    },
+    "876": {
+      "op": "itxn_field ConfigAssetName",
+      "stack_out": []
+    },
+    "878": {
+      "op": "intc_2 // acfg",
+      "defined_out": [
+        "acfg"
+      ],
+      "stack_out": [
+        "acfg"
+      ]
+    },
+    "879": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "881": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "882": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "884": {
+      "op": "itxn_submit"
+    },
+    "885": {
+      "op": "bytec_2 // \"pool_token\"",
+      "stack_out": [
+        "\"pool_token\""
+      ]
+    },
+    "886": {
+      "op": "itxn CreatedAssetID",
+      "defined_out": [
+        "\"pool_token\"",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "\"pool_token\"",
+        "tmp%2#1"
+      ]
+    },
+    "888": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "889": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "890": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "stack_out": [
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "891": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "asset#0",
+        "maybe_exists%1#0"
+      ],
+      "stack_out": [
+        "asset#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "892": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "asset#0"
+      ]
+    },
+    "893": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "asset#0",
+        "tmp%0#2"
+      ],
+      "stack_out": [
+        "asset#0",
+        "tmp%0#2"
+      ]
+    },
+    "895": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#2",
+        "asset#0"
+      ]
+    },
+    "896": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#2",
+        "asset#0",
+        "0"
+      ]
+    },
+    "897": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": []
+    },
+    "900": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "901": {
+      "op": "bytec_1 // \"asset_no\"",
+      "stack_out": [
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "902": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "asset#0",
+        "maybe_exists%2#0"
+      ],
+      "stack_out": [
+        "asset#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "903": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "asset#0"
+      ]
+    },
+    "904": {
+      "op": "global CurrentApplicationAddress",
+      "stack_out": [
+        "asset#0",
+        "tmp%0#2"
+      ]
+    },
+    "906": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#2",
+        "asset#0"
+      ]
+    },
+    "907": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#2",
+        "asset#0",
+        "0"
+      ]
+    },
+    "908": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": []
+    },
+    "911": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "912": {
+      "op": "bytec_2 // \"pool_token\"",
+      "stack_out": [
+        "0",
+        "\"pool_token\""
+      ]
+    },
+    "913": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "914": {
+      "error": "check self.pool_token exists",
+      "op": "assert // check self.pool_token exists",
+      "stack_out": [
+        "maybe_value%3#0"
+      ]
+    },
+    "915": {
       "retsub": true,
       "op": "retsub"
     },
-    "374": {
-      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.get_no_asset_id",
-      "params": {},
-      "block": "get_no_asset_id",
+    "916": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.set_order",
+      "params": {
+        "order_type#0": "uint64",
+        "user#0": "bytes",
+        "price#0": "uint64",
+        "quantity#0": "uint64",
+        "payment_txn#0": "uint64"
+      },
+      "block": "set_order",
       "stack_in": [],
+      "op": "proto 5 0"
+    },
+    "919": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "price#0 (copy)"
+      ],
+      "stack_out": [
+        "price#0 (copy)"
+      ]
+    },
+    "921": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "price#0 (copy)",
+        "quantity#0 (copy)"
+      ],
+      "stack_out": [
+        "price#0 (copy)",
+        "quantity#0 (copy)"
+      ]
+    },
+    "923": {
+      "op": "*",
+      "defined_out": [
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0"
+      ]
+    },
+    "924": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "payment_txn#0 (copy)",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "926": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "tmp%0#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%0#0"
+      ]
+    },
+    "928": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "tmp%0#0",
+        "total_payment#0",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%0#0",
+        "user#0 (copy)"
+      ]
+    },
+    "930": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%1#0"
+      ]
+    },
+    "931": {
+      "error": "Il pagamento deve provenire dall'utente",
+      "op": "assert // Il pagamento deve provenire dall'utente",
+      "stack_out": [
+        "total_payment#0"
+      ]
+    },
+    "932": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "total_payment#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "934": {
+      "op": "gtxns Receiver",
+      "defined_out": [
+        "tmp%2#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%2#0"
+      ]
+    },
+    "936": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%3#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%2#0",
+        "tmp%3#0"
+      ]
+    },
+    "938": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%4#0"
+      ]
+    },
+    "939": {
+      "error": "Il pagamento deve essere inviato al contratto",
+      "op": "assert // Il pagamento deve essere inviato al contratto",
+      "stack_out": [
+        "total_payment#0"
+      ]
+    },
+    "940": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "total_payment#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "942": {
+      "op": "gtxns Amount",
+      "defined_out": [
+        "tmp%5#0",
+        "total_payment#0"
+      ],
+      "stack_out": [
+        "total_payment#0",
+        "tmp%5#0"
+      ]
+    },
+    "944": {
+      "op": "==",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "945": {
+      "error": "L'importo pagato non \u00e8 corretto",
+      "op": "assert // L'importo pagato non \u00e8 corretto",
+      "stack_out": []
+    },
+    "946": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "948": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)",
+        "1"
+      ]
+    },
+    "949": {
+      "op": "==",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "950": {
+      "op": "bz set_order_else_body@2",
+      "stack_out": []
+    },
+    "953": {
+      "op": "bytec 6 // 0x7965735f70726963655f",
+      "defined_out": [
+        "0x7965735f70726963655f"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f"
+      ]
+    },
+    "955": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "0x7965735f70726963655f",
+        "user#0 (copy)"
+      ]
+    },
+    "957": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "958": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "tmp%8#0",
+        "price#0 (copy)"
+      ]
+    },
+    "960": {
+      "op": "itob",
+      "defined_out": [
+        "new_box_value%0#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "new_box_value%0#0"
+      ]
+    },
+    "961": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "962": {
+      "op": "bytec 7 // 0x7965735f7175616e746974795f",
+      "defined_out": [
+        "0x7965735f7175616e746974795f"
+      ],
+      "stack_out": [
+        "0x7965735f7175616e746974795f"
+      ]
+    },
+    "964": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "0x7965735f7175616e746974795f",
+        "user#0 (copy)"
+      ]
+    },
+    "966": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "967": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "tmp%9#0",
+        "quantity#0 (copy)"
+      ]
+    },
+    "969": {
+      "op": "itob",
+      "defined_out": [
+        "new_box_value%1#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0",
+        "new_box_value%1#0"
+      ]
+    },
+    "970": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "971": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "972": {
+      "block": "set_order_else_body@2",
+      "stack_in": [],
+      "op": "frame_dig -5",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "974": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "975": {
+      "error": "Tipo di ordine non valido",
+      "op": "assert // Tipo di ordine non valido",
+      "stack_out": []
+    },
+    "976": {
+      "op": "bytec 8 // 0x6e6f5f70726963655f",
+      "defined_out": [
+        "0x6e6f5f70726963655f"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f"
+      ]
+    },
+    "978": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "0x6e6f5f70726963655f",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f",
+        "user#0 (copy)"
+      ]
+    },
+    "980": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "981": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "price#0 (copy)",
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0",
+        "price#0 (copy)"
+      ]
+    },
+    "983": {
+      "op": "itob",
+      "defined_out": [
+        "new_box_value%2#0",
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0",
+        "new_box_value%2#0"
+      ]
+    },
+    "984": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "985": {
+      "op": "bytec 9 // 0x6e6f5f7175616e746974795f",
+      "defined_out": [
+        "0x6e6f5f7175616e746974795f"
+      ],
+      "stack_out": [
+        "0x6e6f5f7175616e746974795f"
+      ]
+    },
+    "987": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "0x6e6f5f7175616e746974795f",
+        "user#0 (copy)"
+      ]
+    },
+    "989": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "990": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "quantity#0 (copy)",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "quantity#0 (copy)"
+      ]
+    },
+    "992": {
+      "op": "itob",
+      "defined_out": [
+        "new_box_value%3#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "new_box_value%3#0"
+      ]
+    },
+    "993": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "994": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "995": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.get_order",
+      "params": {
+        "order_type#0": "uint64",
+        "user#0": "bytes"
+      },
+      "block": "get_order",
+      "stack_in": [],
+      "op": "proto 2 2"
+    },
+    "998": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "1000": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)",
+        "1"
+      ]
+    },
+    "1001": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1002": {
+      "op": "bz get_order_else_body@2",
+      "stack_out": []
+    },
+    "1005": {
+      "op": "bytec 6 // 0x7965735f70726963655f",
+      "defined_out": [
+        "0x7965735f70726963655f"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f"
+      ]
+    },
+    "1007": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "0x7965735f70726963655f",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f",
+        "user#0 (copy)"
+      ]
+    },
+    "1009": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1010": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1011": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1012": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value_converted%0#0"
+      ],
+      "stack_out": [
+        "maybe_exists%0#0",
+        "maybe_value_converted%0#0"
+      ]
+    },
+    "1013": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1014": {
+      "error": "check self.place_order_yes_price entry exists",
+      "op": "assert // check self.place_order_yes_price entry exists",
+      "stack_out": [
+        "maybe_value_converted%0#0"
+      ]
+    },
+    "1015": {
+      "op": "bytec 7 // 0x7965735f7175616e746974795f",
+      "defined_out": [
+        "0x7965735f7175616e746974795f",
+        "maybe_value_converted%0#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "0x7965735f7175616e746974795f"
+      ]
+    },
+    "1017": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "0x7965735f7175616e746974795f",
+        "user#0 (copy)"
+      ]
+    },
+    "1019": {
+      "op": "concat",
+      "defined_out": [
+        "maybe_value_converted%0#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "tmp%2#0"
+      ]
+    },
+    "1020": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "maybe_value_converted%0#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1021": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1022": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value_converted%0#0",
+        "maybe_value_converted%1#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_exists%1#0",
+        "maybe_value_converted%1#0"
+      ]
+    },
+    "1023": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_value_converted%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1024": {
+      "error": "check self.place_order_yes_quantity entry exists",
+      "op": "assert // check self.place_order_yes_quantity entry exists",
+      "stack_out": [
+        "maybe_value_converted%0#0",
+        "maybe_value_converted%1#0"
+      ]
+    },
+    "1025": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1026": {
+      "block": "get_order_else_body@2",
+      "stack_in": [],
+      "op": "frame_dig -2",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "1028": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1029": {
+      "error": "Tipo di ordine non valido",
+      "op": "assert // Tipo di ordine non valido",
+      "stack_out": []
+    },
+    "1030": {
+      "op": "bytec 8 // 0x6e6f5f70726963655f",
+      "defined_out": [
+        "0x6e6f5f70726963655f"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f"
+      ]
+    },
+    "1032": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "0x6e6f5f70726963655f",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f",
+        "user#0 (copy)"
+      ]
+    },
+    "1034": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1035": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1036": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "1037": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value_converted%2#0"
+      ],
+      "stack_out": [
+        "maybe_exists%2#0",
+        "maybe_value_converted%2#0"
+      ]
+    },
+    "1038": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1039": {
+      "error": "check self.place_order_no_price entry exists",
+      "op": "assert // check self.place_order_no_price entry exists",
+      "stack_out": [
+        "maybe_value_converted%2#0"
+      ]
+    },
+    "1040": {
+      "op": "bytec 9 // 0x6e6f5f7175616e746974795f",
+      "defined_out": [
+        "0x6e6f5f7175616e746974795f",
+        "maybe_value_converted%2#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "0x6e6f5f7175616e746974795f"
+      ]
+    },
+    "1042": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "0x6e6f5f7175616e746974795f",
+        "user#0 (copy)"
+      ]
+    },
+    "1044": {
+      "op": "concat",
+      "defined_out": [
+        "maybe_value_converted%2#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "tmp%5#0"
+      ]
+    },
+    "1045": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "maybe_value_converted%2#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1046": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "1047": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value_converted%2#0",
+        "maybe_value_converted%3#0"
+      ],
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_exists%3#0",
+        "maybe_value_converted%3#0"
+      ]
+    },
+    "1048": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_value_converted%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1049": {
+      "error": "check self.place_order_no_quantity entry exists",
+      "op": "assert // check self.place_order_no_quantity entry exists",
+      "stack_out": [
+        "maybe_value_converted%2#0",
+        "maybe_value_converted%3#0"
+      ]
+    },
+    "1050": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1051": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.fill_order",
+      "params": {
+        "yes_user#0": "bytes",
+        "no_user#0": "bytes"
+      },
+      "block": "fill_order",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "1054": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1056": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "1058": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1059": {
+      "error": "Solo il contratto principale pu\u00f2 eseguire questa operazione",
+      "op": "assert // Solo il contratto principale pu\u00f2 eseguire questa operazione",
+      "stack_out": []
+    },
+    "1060": {
+      "op": "bytec 6 // 0x7965735f70726963655f",
+      "defined_out": [
+        "0x7965735f70726963655f"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f"
+      ]
+    },
+    "1062": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "0x7965735f70726963655f",
+        "yes_user#0 (copy)"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f",
+        "yes_user#0 (copy)"
+      ]
+    },
+    "1064": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1065": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ]
+    },
+    "1066": {
+      "op": "box_len",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1067": {
+      "op": "bury 1",
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1069": {
+      "error": "YES user has no order",
+      "op": "assert // YES user has no order",
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1070": {
+      "op": "bytec 8 // 0x6e6f5f70726963655f",
+      "defined_out": [
+        "0x6e6f5f70726963655f",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0x6e6f5f70726963655f"
+      ]
+    },
+    "1072": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "0x6e6f5f70726963655f",
+        "no_user#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0x6e6f5f70726963655f",
+        "no_user#0 (copy)"
+      ]
+    },
+    "1074": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ]
+    },
+    "1075": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "1076": {
+      "op": "box_len",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1077": {
+      "op": "bury 1",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1079": {
+      "error": "NO user has no order",
+      "op": "assert // NO user has no order",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ]
+    },
+    "1080": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%3#0 (copy)"
+      ]
+    },
+    "1082": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1083": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "1084": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "maybe_exists%2#0",
+        "yes_price#0"
+      ]
+    },
+    "1085": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1086": {
+      "error": "check self.place_order_yes_price entry exists",
+      "op": "assert // check self.place_order_yes_price entry exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0"
+      ]
+    },
+    "1087": {
+      "op": "bytec 7 // 0x7965735f7175616e746974795f",
+      "defined_out": [
+        "0x7965735f7175616e746974795f",
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "0x7965735f7175616e746974795f"
+      ]
+    },
+    "1089": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "0x7965735f7175616e746974795f",
+        "yes_user#0 (copy)"
+      ]
+    },
+    "1091": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0"
+      ]
+    },
+    "1092": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)",
+        "yes_price#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "1093": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1094": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "1095": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "maybe_exists%3#0",
+        "yes_quantity#0"
+      ]
+    },
+    "1096": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1097": {
+      "error": "check self.place_order_yes_quantity entry exists",
+      "op": "assert // check self.place_order_yes_quantity entry exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0"
+      ]
+    },
+    "1098": {
+      "op": "dig 3",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "1100": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1101": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "1102": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "no_price#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "maybe_exists%4#0",
+        "no_price#0"
+      ]
+    },
+    "1103": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1104": {
+      "error": "check self.place_order_no_price entry exists",
+      "op": "assert // check self.place_order_no_price entry exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0"
+      ]
+    },
+    "1105": {
+      "op": "bytec 9 // 0x6e6f5f7175616e746974795f",
+      "defined_out": [
+        "0x6e6f5f7175616e746974795f",
+        "no_price#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "0x6e6f5f7175616e746974795f"
+      ]
+    },
+    "1107": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "0x6e6f5f7175616e746974795f",
+        "no_user#0 (copy)"
+      ]
+    },
+    "1109": {
+      "op": "concat",
+      "defined_out": [
+        "no_price#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0"
+      ]
+    },
+    "1110": {
+      "op": "dup",
+      "defined_out": [
+        "no_price#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "1111": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0",
+        "no_price#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1112": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "1113": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "maybe_exists%5#0",
+        "no_quantity#0"
+      ]
+    },
+    "1114": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1115": {
+      "error": "check self.place_order_no_quantity entry exists",
+      "op": "assert // check self.place_order_no_quantity entry exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0"
+      ]
+    },
+    "1116": {
+      "op": "dig 5",
+      "defined_out": [
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_price#0 (copy)",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "yes_price#0 (copy)"
+      ]
+    },
+    "1118": {
+      "op": "dig 3",
+      "defined_out": [
+        "no_price#0",
+        "no_price#0 (copy)",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_price#0 (copy)",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "yes_price#0 (copy)",
+        "no_price#0 (copy)"
+      ]
+    },
+    "1120": {
+      "op": "+",
+      "defined_out": [
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "tmp%9#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "tmp%9#0"
+      ]
+    },
+    "1121": {
+      "op": "pushint 10 // 10",
+      "defined_out": [
+        "10",
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "tmp%9#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "tmp%9#0",
+        "10"
+      ]
+    },
+    "1123": {
+      "op": "%",
+      "defined_out": [
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%10#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "tmp%10#0"
+      ]
+    },
+    "1124": {
+      "op": "!",
+      "defined_out": [
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%11#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "tmp%11#0"
+      ]
+    },
+    "1125": {
+      "error": "Prices don't match condition",
+      "op": "assert // Prices don't match condition",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0"
+      ]
+    },
+    "1126": {
+      "op": "bytec_3 // \"matched_yes_price\"",
+      "defined_out": [
+        "\"matched_yes_price\"",
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_price#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "yes_price#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "\"matched_yes_price\""
+      ]
+    },
+    "1127": {
+      "op": "uncover 6",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "\"matched_yes_price\"",
+        "yes_price#0"
+      ]
+    },
+    "1129": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0"
+      ]
+    },
+    "1130": {
+      "op": "bytec 4 // \"matched_no_price\"",
+      "defined_out": [
+        "\"matched_no_price\"",
+        "no_price#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "no_price#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "\"matched_no_price\""
+      ]
+    },
+    "1132": {
+      "op": "uncover 3",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "\"matched_no_price\"",
+        "no_price#0"
+      ]
+    },
+    "1134": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0"
+      ]
+    },
+    "1135": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "0"
+      ]
+    },
+    "1136": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1137": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%6#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "yes_quantity#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%6#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "1138": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "1139": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%6#0",
+        "yes_user#0 (copy)"
+      ]
+    },
+    "1141": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "yes_quantity#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "yes_user#0 (copy)",
+        "maybe_value%6#0"
+      ]
+    },
+    "1142": {
+      "op": "uncover 4",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "yes_user#0 (copy)",
+        "maybe_value%6#0",
+        "yes_quantity#0"
+      ]
+    },
+    "1144": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0"
+      ]
+    },
+    "1147": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "0"
+      ]
+    },
+    "1148": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1149": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%7#0",
+        "no_quantity#0",
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%7#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "1150": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "1151": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "maybe_value%7#0",
+        "no_user#0 (copy)"
+      ]
+    },
+    "1153": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_quantity#0",
+        "no_user#0 (copy)",
+        "maybe_value%7#0"
+      ]
+    },
+    "1154": {
+      "op": "uncover 2",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "no_user#0 (copy)",
+        "maybe_value%7#0",
+        "no_quantity#0"
+      ]
+    },
+    "1156": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0"
+      ]
+    },
+    "1159": {
+      "op": "uncover 3",
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "tmp%3#0"
+      ]
+    },
+    "1161": {
+      "op": "box_del",
+      "defined_out": [
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "{box_del}"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0",
+        "{box_del}"
+      ]
+    },
+    "1162": {
+      "op": "pop",
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%6#0",
+        "tmp%8#0"
+      ]
+    },
+    "1163": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%8#0",
+        "tmp%6#0"
+      ]
+    },
+    "1164": {
+      "op": "box_del",
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%8#0",
+        "{box_del}"
+      ]
+    },
+    "1165": {
+      "op": "pop",
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%8#0"
+      ]
+    },
+    "1166": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%4#0"
+      ]
+    },
+    "1167": {
+      "op": "box_del",
+      "stack_out": [
+        "tmp%8#0",
+        "{box_del}"
+      ]
+    },
+    "1168": {
+      "op": "pop",
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "1169": {
+      "op": "box_del",
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "1170": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "1171": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._update_ratio",
+      "op": "callsub _update_ratio"
+    },
+    "1174": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1175": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.buyAsset",
+      "params": {
+        "user#0": "bytes",
+        "asset_type#0": "uint64",
+        "quantity#0": "uint64",
+        "payment_txn#0": "uint64"
+      },
+      "block": "buyAsset",
+      "stack_in": [],
+      "op": "proto 4 0"
+    },
+    "1178": {
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1180": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0"
+      ]
+    },
+    "1181": {
+      "op": "bytec_3 // \"matched_yes_price\"",
+      "defined_out": [
+        "\"matched_yes_price\"",
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0",
+        "\"matched_yes_price\""
+      ]
+    },
+    "1182": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1183": {
+      "error": "check self.matched_yes_price exists",
+      "op": "assert // check self.matched_yes_price exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1184": {
+      "op": "bz buyAsset_bool_false@3",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1187": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "asset_to_buy#0",
+        "0"
+      ]
+    },
+    "1188": {
+      "op": "bytec 4 // \"matched_no_price\"",
+      "defined_out": [
+        "\"matched_no_price\"",
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0",
+        "\"matched_no_price\""
+      ]
+    },
+    "1190": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1191": {
+      "error": "check self.matched_no_price exists",
+      "op": "assert // check self.matched_no_price exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1192": {
+      "op": "bz buyAsset_bool_false@3",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1195": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "and_result%0#0"
+      ]
+    },
+    "1196": {
+      "block": "buyAsset_bool_merge@4",
+      "stack_in": [
+        "asset_to_buy#0",
+        "and_result%0#0"
+      ],
+      "error": "Nessun match trovato, impossibile acquistare",
+      "op": "assert // Nessun match trovato, impossibile acquistare",
+      "defined_out": [],
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1197": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "asset_type#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "asset_type#0 (copy)"
+      ]
+    },
+    "1199": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "asset_type#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "asset_type#0 (copy)",
+        "1"
+      ]
+    },
+    "1200": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "tmp%2#0"
+      ]
+    },
+    "1201": {
+      "op": "bz buyAsset_else_body@6",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1204": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0"
+      ]
+    },
+    "1205": {
+      "op": "bytec_3 // \"matched_yes_price\"",
+      "defined_out": [
+        "\"matched_yes_price\"",
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0",
+        "\"matched_yes_price\""
+      ]
+    },
+    "1206": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1207": {
+      "error": "check self.matched_yes_price exists",
+      "op": "assert // check self.matched_yes_price exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0"
+      ]
+    },
+    "1208": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "0"
+      ]
+    },
+    "1209": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1210": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "asset_to_buy#0",
+        "maybe_exists%3#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "asset_to_buy#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1211": {
+      "op": "swap",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%3#0",
+        "asset_to_buy#0"
+      ]
+    },
+    "1212": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "asset_to_buy#0",
+        "maybe_exists%3#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1214": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0"
+      ]
+    },
+    "1215": {
+      "block": "buyAsset_after_if_else@10",
+      "stack_in": [
+        "asset_to_buy#0",
+        "price#0"
+      ],
+      "op": "frame_dig -2",
+      "defined_out": [
+        "price#0",
+        "quantity#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "quantity#0 (copy)"
+      ]
+    },
+    "1217": {
+      "op": "*",
+      "defined_out": [
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0"
+      ]
+    },
+    "1218": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "payment_txn#0 (copy)",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "1220": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "tmp%4#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%4#0"
+      ]
+    },
+    "1222": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "tmp%4#0",
+        "total_cost#0",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%4#0",
+        "user#0 (copy)"
+      ]
+    },
+    "1224": {
+      "op": "==",
+      "defined_out": [
+        "tmp%5#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%5#0"
+      ]
+    },
+    "1225": {
+      "error": "Il pagamento deve provenire dall'utente",
+      "op": "assert // Il pagamento deve provenire dall'utente",
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0"
+      ]
+    },
+    "1226": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "1228": {
+      "op": "gtxns Receiver",
+      "defined_out": [
+        "tmp%6#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%6#0"
+      ]
+    },
+    "1230": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%6#0",
+        "tmp%7#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%6#0",
+        "tmp%7#0"
+      ]
+    },
+    "1232": {
+      "op": "==",
+      "defined_out": [
+        "tmp%8#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%8#0"
+      ]
+    },
+    "1233": {
+      "error": "Il pagamento deve essere inviato al contratto",
+      "op": "assert // Il pagamento deve essere inviato al contratto",
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0"
+      ]
+    },
+    "1234": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "payment_txn#0 (copy)"
+      ]
+    },
+    "1236": {
+      "op": "gtxns Amount",
+      "defined_out": [
+        "tmp%9#0",
+        "total_cost#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "total_cost#0",
+        "tmp%9#0"
+      ]
+    },
+    "1238": {
+      "op": "==",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "tmp%10#0"
+      ]
+    },
+    "1239": {
+      "error": "L'importo pagato non \u00e8 corretto",
+      "op": "assert // L'importo pagato non \u00e8 corretto",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1240": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "asset_to_buy#0",
+        "user#0 (copy)"
+      ]
+    },
+    "1242": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "asset_to_buy#0",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "user#0 (copy)",
+        "asset_to_buy#0"
+      ]
+    },
+    "1244": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "asset_to_buy#0",
+        "user#0 (copy)",
+        "asset_to_buy#0",
+        "quantity#0 (copy)"
+      ]
+    },
+    "1246": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1249": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1250": {
+      "block": "buyAsset_else_body@6",
+      "stack_in": [
+        "asset_to_buy#0"
+      ],
+      "op": "frame_dig -3",
+      "defined_out": [
+        "asset_type#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "asset_type#0 (copy)"
+      ]
+    },
+    "1252": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "tmp%3#0"
+      ]
+    },
+    "1253": {
+      "error": "Tipo di asset non valido",
+      "op": "assert // Tipo di asset non valido",
+      "stack_out": [
+        "asset_to_buy#0"
+      ]
+    },
+    "1254": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0"
+      ]
+    },
+    "1255": {
+      "op": "bytec 4 // \"matched_no_price\"",
+      "defined_out": [
+        "\"matched_no_price\"",
+        "0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "0",
+        "\"matched_no_price\""
+      ]
+    },
+    "1257": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1258": {
+      "error": "check self.matched_no_price exists",
+      "op": "assert // check self.matched_no_price exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0"
+      ]
+    },
+    "1259": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "0"
+      ]
+    },
+    "1260": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1261": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "asset_to_buy#0",
+        "maybe_exists%5#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "asset_to_buy#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1262": {
+      "op": "swap",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%5#0",
+        "asset_to_buy#0"
+      ]
+    },
+    "1263": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "asset_to_buy#0",
+        "maybe_exists%5#0",
+        "price#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1265": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "asset_to_buy#0",
+        "price#0"
+      ]
+    },
+    "1266": {
+      "op": "b buyAsset_after_if_else@10"
+    },
+    "1269": {
+      "block": "buyAsset_bool_false@3",
+      "stack_in": [
+        "asset_to_buy#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "asset_to_buy#0",
+        "and_result%0#0"
+      ]
+    },
+    "1270": {
+      "op": "b buyAsset_bool_merge@4"
+    },
+    "1273": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.swap",
+      "params": {
+        "swap_xfer#0": "uint64",
+        "yes_asset#0": "uint64",
+        "no_asset#0": "uint64"
+      },
+      "block": "swap",
+      "stack_in": [],
+      "op": "proto 3 0"
+    },
+    "1276": {
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "in_supply#0"
+      ]
+    },
+    "1278": {
+      "op": "dup",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0"
+      ]
+    },
+    "1279": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "0"
+      ]
+    },
+    "1280": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1281": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1282": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1283": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "maybe_value%0#0",
+        "yes_asset#0 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%0#0",
+        "yes_asset#0 (copy)"
+      ]
+    },
+    "1285": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "tmp%0#0"
+      ]
+    },
+    "1286": {
+      "error": "asset yes nn corretto",
+      "op": "assert // asset yes nn corretto",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0"
+      ]
+    },
+    "1287": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "0"
+      ]
+    },
+    "1288": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1289": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1290": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1291": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "maybe_value%1#0",
+        "no_asset#0 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "maybe_value%1#0",
+        "no_asset#0 (copy)"
+      ]
+    },
+    "1293": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "tmp%1#0"
+      ]
+    },
+    "1294": {
+      "error": "asset no nn corretto",
+      "op": "assert // asset no nn corretto",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0"
+      ]
+    },
+    "1295": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "swap_xfer#0 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "swap_xfer#0 (copy)"
+      ]
+    },
+    "1297": {
+      "op": "gtxns AssetAmount",
+      "defined_out": [
+        "in_amount#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1299": {
+      "op": "dup",
+      "defined_out": [
+        "in_amount#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "in_amount#0"
+      ]
+    },
+    "1300": {
+      "error": "amount minimo non raggiunto",
+      "op": "assert // amount minimo non raggiunto",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1301": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "swap_xfer#0 (copy)"
+      ]
+    },
+    "1303": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "in_amount#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "tmp%4#0"
+      ]
+    },
+    "1305": {
+      "op": "txn Sender",
+      "defined_out": [
+        "in_amount#0",
+        "tmp%4#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "tmp%4#0",
+        "tmp%5#0"
+      ]
+    },
+    "1307": {
+      "op": "==",
+      "defined_out": [
+        "in_amount#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "tmp%6#0"
+      ]
+    },
+    "1308": {
+      "error": "sender invalido",
+      "op": "assert // sender invalido",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1309": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "0"
+      ]
+    },
+    "1310": {
+      "op": "bytec_1 // \"asset_no\"",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1311": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "in_amount#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1312": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "1313": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "0"
+      ]
+    },
+    "1314": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1315": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "in_amount#0",
+        "maybe_exists%3#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1316": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "1317": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "swap_xfer#0 (copy)"
+      ]
+    },
+    "1319": {
+      "op": "gtxns XferAsset",
+      "defined_out": [
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "tmp%7#0"
+      ]
+    },
+    "1321": {
+      "op": "match swap_switch_case_0@1 swap_switch_case_1@2",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1327": {
+      "error": "asset id incorretto",
+      "op": "err // asset id incorretto"
+    },
+    "1328": {
+      "block": "swap_switch_case_1@2",
+      "stack_in": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ],
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_yes_balance",
+      "op": "callsub _current_yes_balance",
+      "defined_out": [
+        "in_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "in_supply#0"
+      ]
+    },
+    "1331": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "in_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1333": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_no_balance",
+      "op": "callsub _current_no_balance",
+      "defined_out": [
+        "in_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0"
+      ]
+    },
+    "1336": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "0"
+      ]
+    },
+    "1337": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0",
+        "in_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1338": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "in_supply#0",
+        "maybe_exists%5#0",
+        "out_asset#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "out_asset#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1339": {
+      "op": "swap",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "maybe_exists%5#0",
+        "out_asset#0"
+      ]
+    },
+    "1340": {
+      "op": "frame_bury 1",
+      "defined_out": [
+        "in_supply#0",
+        "maybe_exists%5#0",
+        "out_asset#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1342": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0"
+      ]
+    },
+    "1343": {
+      "block": "swap_switch_case_next@4",
+      "stack_in": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0"
+      ],
+      "op": "frame_dig 0",
+      "defined_out": [
+        "in_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "in_supply#0"
+      ]
+    },
+    "1345": {
+      "op": "dup",
+      "defined_out": [
+        "in_supply#0",
+        "in_supply#0 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "in_supply#0",
+        "in_supply#0 (copy)"
+      ]
+    },
+    "1346": {
+      "op": "dig 2",
+      "defined_out": [
+        "in_supply#0",
+        "in_supply#0 (copy)",
+        "out_supply#0",
+        "out_supply#0 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "in_supply#0",
+        "in_supply#0 (copy)",
+        "out_supply#0 (copy)"
+      ]
+    },
+    "1348": {
+      "op": "*",
+      "defined_out": [
+        "in_supply#0",
+        "k#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "in_supply#0",
+        "k#0"
+      ]
+    },
+    "1349": {
+      "op": "swap",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "k#0",
+        "in_supply#0"
+      ]
+    },
+    "1350": {
+      "op": "frame_dig 2",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "k#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "k#0",
+        "in_supply#0",
+        "in_amount#0"
+      ]
+    },
+    "1352": {
+      "op": "+",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "k#0",
+        "new_in_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "k#0",
+        "new_in_supply#0"
+      ]
+    },
+    "1353": {
+      "op": "/",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "new_out_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "new_out_supply#0"
+      ]
+    },
+    "1354": {
+      "op": "-",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "to_swap#1"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "to_swap#1"
+      ]
+    },
+    "1355": {
+      "op": "dup",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "to_swap#1",
+        "to_swap#1 (copy)"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "to_swap#1",
+        "to_swap#1 (copy)"
+      ]
+    },
+    "1356": {
+      "error": "send amount too low",
+      "op": "assert // send amount too low",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "to_swap#1"
+      ]
+    },
+    "1357": {
+      "op": "txn Sender",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "tmp%10#0",
+        "to_swap#1"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "to_swap#1",
+        "tmp%10#0"
+      ]
+    },
+    "1359": {
+      "op": "frame_dig 1",
+      "defined_out": [
+        "in_amount#0",
+        "in_supply#0",
+        "out_asset#0",
+        "tmp%10#0",
+        "to_swap#1"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "to_swap#1",
+        "tmp%10#0",
+        "out_asset#0"
+      ]
+    },
+    "1361": {
+      "op": "uncover 2",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "tmp%10#0",
+        "out_asset#0",
+        "to_swap#1"
+      ]
+    },
+    "1363": {
+      "callsub": "smart_contracts.prediction_market.contract.do_asset_transfer",
+      "op": "callsub do_asset_transfer",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1366": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._update_ratio",
+      "op": "callsub _update_ratio"
+    },
+    "1369": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1370": {
+      "block": "swap_switch_case_0@1",
+      "stack_in": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ],
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_no_balance",
+      "op": "callsub _current_no_balance",
+      "defined_out": [
+        "in_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "in_supply#0"
+      ]
+    },
+    "1373": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "in_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0"
+      ]
+    },
+    "1375": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_yes_balance",
+      "op": "callsub _current_yes_balance",
+      "defined_out": [
+        "in_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0"
+      ]
+    },
+    "1378": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "0"
+      ]
+    },
+    "1379": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0",
+        "in_supply#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1380": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "in_supply#0",
+        "maybe_exists%4#0",
+        "out_asset#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "out_asset#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1381": {
+      "op": "swap",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "maybe_exists%4#0",
+        "out_asset#0"
+      ]
+    },
+    "1382": {
+      "op": "frame_bury 1",
+      "defined_out": [
+        "in_supply#0",
+        "maybe_exists%4#0",
+        "out_asset#0",
+        "out_supply#0"
+      ],
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1384": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "in_supply#0",
+        "out_asset#0",
+        "in_amount#0",
+        "out_supply#0"
+      ]
+    },
+    "1385": {
+      "op": "b swap_switch_case_next@4"
+    },
+    "1388": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.clear_orders",
+      "params": {
+        "order_type#0": "uint64",
+        "user1#0": "bytes"
+      },
+      "block": "clear_orders",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "1391": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "1393": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)",
+        "1"
+      ]
+    },
+    "1394": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1395": {
+      "op": "bz clear_orders_else_body@2",
+      "stack_out": []
+    },
+    "1398": {
+      "op": "bytec 6 // 0x7965735f70726963655f",
+      "defined_out": [
+        "0x7965735f70726963655f"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f"
+      ]
+    },
+    "1400": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "0x7965735f70726963655f",
+        "user1#0 (copy)"
+      ],
+      "stack_out": [
+        "0x7965735f70726963655f",
+        "user1#0 (copy)"
+      ]
+    },
+    "1402": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1403": {
+      "op": "box_del",
+      "defined_out": [
+        "{box_del}"
+      ],
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "1404": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "1405": {
+      "op": "bytec 7 // 0x7965735f7175616e746974795f",
+      "defined_out": [
+        "0x7965735f7175616e746974795f"
+      ],
+      "stack_out": [
+        "0x7965735f7175616e746974795f"
+      ]
+    },
+    "1407": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "0x7965735f7175616e746974795f",
+        "user1#0 (copy)"
+      ]
+    },
+    "1409": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1410": {
+      "op": "box_del",
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "1411": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "1412": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1413": {
+      "block": "clear_orders_else_body@2",
+      "stack_in": [],
+      "op": "frame_dig -2",
+      "defined_out": [
+        "order_type#0 (copy)"
+      ],
+      "stack_out": [
+        "order_type#0 (copy)"
+      ]
+    },
+    "1415": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1416": {
+      "error": "Tipo di ordine non valido",
+      "op": "assert // Tipo di ordine non valido",
+      "stack_out": []
+    },
+    "1417": {
+      "op": "bytec 8 // 0x6e6f5f70726963655f",
+      "defined_out": [
+        "0x6e6f5f70726963655f"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f"
+      ]
+    },
+    "1419": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "0x6e6f5f70726963655f",
+        "user1#0 (copy)"
+      ],
+      "stack_out": [
+        "0x6e6f5f70726963655f",
+        "user1#0 (copy)"
+      ]
+    },
+    "1421": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1422": {
+      "op": "box_del",
+      "defined_out": [
+        "{box_del}"
+      ],
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "1423": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "1424": {
+      "op": "bytec 9 // 0x6e6f5f7175616e746974795f",
+      "defined_out": [
+        "0x6e6f5f7175616e746974795f"
+      ],
+      "stack_out": [
+        "0x6e6f5f7175616e746974795f"
+      ]
+    },
+    "1426": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "0x6e6f5f7175616e746974795f",
+        "user1#0 (copy)"
+      ]
+    },
+    "1428": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1429": {
+      "op": "box_del",
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "1430": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "1431": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1432": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.close_market",
+      "params": {
+        "oracle#0": "bytes",
+        "outcome#0": "uint64"
+      },
+      "block": "close_market",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "1435": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1437": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "oracle#0 (copy)",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "oracle#0 (copy)"
+      ]
+    },
+    "1439": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1440": {
+      "error": "Solo l'oracolo pu\u00f2 chiudere il mercato",
+      "op": "assert // Solo l'oracolo pu\u00f2 chiudere il mercato",
+      "stack_out": []
+    },
+    "1441": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
@@ -1206,18 +7420,18 @@
         "0"
       ]
     },
-    "375": {
-      "op": "bytec_2 // \"no_asset_id\"",
+    "1442": {
+      "op": "bytec 5 // \"market_closed\"",
       "defined_out": [
-        "\"no_asset_id\"",
+        "\"market_closed\"",
         "0"
       ],
       "stack_out": [
         "0",
-        "\"no_asset_id\""
+        "\"market_closed\""
       ]
     },
-    "376": {
+    "1444": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1228,14 +7442,753 @@
         "maybe_exists%0#0"
       ]
     },
-    "377": {
-      "error": "check self.no_asset_id exists",
-      "op": "assert // check self.no_asset_id exists",
+    "1445": {
+      "error": "check self.market_closed exists",
+      "op": "assert // check self.market_closed exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "378": {
+    "1446": {
+      "op": "!",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1447": {
+      "error": "Il mercato \u00e8 gi\u00e0 stato chiuso",
+      "op": "assert // Il mercato \u00e8 gi\u00e0 stato chiuso",
+      "stack_out": []
+    },
+    "1448": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "outcome#0 (copy)"
+      ],
+      "stack_out": [
+        "outcome#0 (copy)"
+      ]
+    },
+    "1450": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "outcome#0 (copy)"
+      ],
+      "stack_out": [
+        "outcome#0 (copy)",
+        "1"
+      ]
+    },
+    "1451": {
+      "op": "==",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1452": {
+      "op": "bz close_market_else_body@2",
+      "stack_out": []
+    },
+    "1455": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1456": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1457": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1458": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1459": {
+      "op": "bytec 10 // \"winning_asset\"",
+      "defined_out": [
+        "\"winning_asset\"",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "\"winning_asset\""
+      ]
+    },
+    "1461": {
+      "op": "swap",
+      "stack_out": [
+        "\"winning_asset\"",
+        "maybe_value%1#0"
+      ]
+    },
+    "1462": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1463": {
+      "block": "close_market_after_if_else@3",
+      "stack_in": [],
+      "op": "bytec 5 // \"market_closed\"",
+      "defined_out": [
+        "\"market_closed\""
+      ],
+      "stack_out": [
+        "\"market_closed\""
+      ]
+    },
+    "1465": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"market_closed\"",
+        "1"
+      ],
+      "stack_out": [
+        "\"market_closed\"",
+        "1"
+      ]
+    },
+    "1466": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1467": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1468": {
+      "block": "close_market_else_body@2",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1469": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1470": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1471": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "maybe_value%2#0"
+      ]
+    },
+    "1472": {
+      "op": "bytec 10 // \"winning_asset\"",
+      "defined_out": [
+        "\"winning_asset\"",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "\"winning_asset\""
+      ]
+    },
+    "1474": {
+      "op": "swap",
+      "stack_out": [
+        "\"winning_asset\"",
+        "maybe_value%2#0"
+      ]
+    },
+    "1475": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1476": {
+      "op": "b close_market_after_if_else@3"
+    },
+    "1479": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket.redeem",
+      "params": {
+        "user#0": "bytes",
+        "asset_txn#0": "uint64"
+      },
+      "block": "redeem",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "1482": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1483": {
+      "op": "bytec 5 // \"market_closed\"",
+      "defined_out": [
+        "\"market_closed\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"market_closed\""
+      ]
+    },
+    "1485": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1486": {
+      "error": "check self.market_closed exists",
+      "op": "assert // check self.market_closed exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1487": {
+      "error": "Il mercato non \u00e8 ancora chiuso",
+      "op": "assert // Il mercato non \u00e8 ancora chiuso",
+      "stack_out": []
+    },
+    "1488": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1489": {
+      "op": "bytec 10 // \"winning_asset\"",
+      "defined_out": [
+        "\"winning_asset\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"winning_asset\""
+      ]
+    },
+    "1491": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1492": {
+      "error": "check self.winning_asset exists",
+      "op": "assert // check self.winning_asset exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1493": {
+      "error": "Il risultato non \u00e8 stato stabilito",
+      "op": "assert // Il risultato non \u00e8 stato stabilito",
+      "stack_out": []
+    },
+    "1494": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "asset_txn#0 (copy)"
+      ],
+      "stack_out": [
+        "asset_txn#0 (copy)"
+      ]
+    },
+    "1496": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1498": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "tmp%0#0",
+        "user#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "user#0 (copy)"
+      ]
+    },
+    "1500": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1501": {
+      "error": "L'utente deve inviare il token",
+      "op": "assert // L'utente deve inviare il token",
+      "stack_out": []
+    },
+    "1502": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "asset_txn#0 (copy)"
+      ]
+    },
+    "1504": {
+      "op": "gtxns AssetReceiver",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1506": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%3#0"
+      ]
+    },
+    "1508": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1509": {
+      "error": "I token devono essere inviati al contratto",
+      "op": "assert // I token devono essere inviati al contratto",
+      "stack_out": []
+    },
+    "1510": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "asset_txn#0 (copy)"
+      ]
+    },
+    "1512": {
+      "op": "gtxns XferAsset",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1514": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%5#0",
+        "0"
+      ]
+    },
+    "1515": {
+      "op": "bytec 10 // \"winning_asset\"",
+      "stack_out": [
+        "tmp%5#0",
+        "0",
+        "\"winning_asset\""
+      ]
+    },
+    "1517": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1518": {
+      "error": "check self.winning_asset exists",
+      "op": "assert // check self.winning_asset exists",
+      "stack_out": [
+        "tmp%5#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "1519": {
+      "op": "==",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1520": {
+      "error": "Il token inviato non \u00e8 quello vincente",
+      "op": "assert // Il token inviato non \u00e8 quello vincente",
+      "stack_out": []
+    },
+    "1521": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "asset_txn#0 (copy)"
+      ]
+    },
+    "1523": {
+      "op": "gtxns AssetAmount",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "1525": {
+      "op": "pushint 1000 // 1000",
+      "defined_out": [
+        "1000",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "1000"
+      ]
+    },
+    "1528": {
+      "op": "*",
+      "defined_out": [
+        "algo_to_send#0"
+      ],
+      "stack_out": [
+        "algo_to_send#0"
+      ]
+    },
+    "1529": {
+      "op": "itxn_begin"
+    },
+    "1530": {
+      "op": "itxn_field Amount",
+      "stack_out": []
+    },
+    "1532": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "user#0 (copy)"
+      ]
+    },
+    "1534": {
+      "op": "itxn_field Receiver",
+      "stack_out": []
+    },
+    "1536": {
+      "op": "intc_1 // pay",
+      "defined_out": [
+        "pay"
+      ],
+      "stack_out": [
+        "pay"
+      ]
+    },
+    "1537": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "1539": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1540": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "1542": {
+      "op": "itxn_submit"
+    },
+    "1543": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1544": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket._update_ratio",
+      "params": {},
+      "block": "_update_ratio",
+      "stack_in": [],
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_yes_balance",
+      "op": "callsub _current_yes_balance",
+      "defined_out": [
+        "yes_balance#0"
+      ],
+      "stack_out": [
+        "yes_balance#0"
+      ]
+    },
+    "1547": {
+      "callsub": "smart_contracts.prediction_market.contract.PredictionMarket._current_no_balance",
+      "op": "callsub _current_no_balance",
+      "defined_out": [
+        "no_balance#0",
+        "yes_balance#0"
+      ],
+      "stack_out": [
+        "yes_balance#0",
+        "no_balance#0"
+      ]
+    },
+    "1550": {
+      "op": "*",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "1551": {
+      "op": "bytec 11 // \"ratio\"",
+      "defined_out": [
+        "\"ratio\"",
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"ratio\""
+      ]
+    },
+    "1553": {
+      "op": "swap",
+      "stack_out": [
+        "\"ratio\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "1554": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1555": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1556": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket._current_yes_balance",
+      "params": {},
+      "block": "_current_yes_balance",
+      "stack_in": [],
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1558": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "1559": {
+      "op": "bytec_0 // \"asset_yes\"",
+      "defined_out": [
+        "\"asset_yes\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"asset_yes\""
+      ]
+    },
+    "1560": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1561": {
+      "error": "check self.asset_yes exists",
+      "op": "assert // check self.asset_yes exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1562": {
+      "op": "asset_holding_get AssetBalance",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "1564": {
+      "error": "account opted into asset",
+      "op": "assert // account opted into asset",
+      "stack_out": [
+        "value%0#0"
+      ]
+    },
+    "1565": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1566": {
+      "subroutine": "smart_contracts.prediction_market.contract.PredictionMarket._current_no_balance",
+      "params": {},
+      "block": "_current_no_balance",
+      "stack_in": [],
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1568": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "1569": {
+      "op": "bytec_1 // \"asset_no\"",
+      "defined_out": [
+        "\"asset_no\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"asset_no\""
+      ]
+    },
+    "1570": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1571": {
+      "error": "check self.asset_no exists",
+      "op": "assert // check self.asset_no exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "1572": {
+      "op": "asset_holding_get AssetBalance",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "1574": {
+      "error": "account opted into asset",
+      "op": "assert // account opted into asset",
+      "stack_out": [
+        "value%0#0"
+      ]
+    },
+    "1575": {
       "retsub": true,
       "op": "retsub"
     }
