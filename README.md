@@ -1,4 +1,4 @@
- Algorand Prediction Market
+## Algorand Prediction Market
 
 ## OVERVIEW
 
@@ -9,7 +9,6 @@ In this implementation, users can:
 
 - Create prediction markets with defined outcomes
 - Trade outcome shares using a simple swap mechanism
-- Rely on decentralized mechanisms to resolve markets and claim payouts
 
 The project serve as a demonstration of Algorand’s capabilities for building real-world financial infrastructures.
 
@@ -22,6 +21,7 @@ Specifically, the platform aims to:
 
 - Provide a fully decentralized environment for creating and trading prediction markets without requiring a central authority
 - Demonstrate how smart contracts can autonomously manage market operations, from order matching to payouts
+- Rely on mechanisms to resolve markets and claim payouts
 - Use Algorand Standard Assets (ASA) to tokenize prediction shares and facilitate their trading
 - Minimize user costs by leveraging Algorand’s low transaction fees and fast finality
 
